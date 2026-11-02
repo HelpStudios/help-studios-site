@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 22" width="49" height="22" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- Mark D — "the join".
+
+       Two jigsaw pieces a hand's width apart. The settled piece carries a socket;
+       the arriving piece carries the matching knob, and the knob is amber because
+       it is the join that has not been made yet. That is the product's whole claim
+       in one gesture: people data arrives in pieces, the engine is the layer that
+       joins them, and the last move belongs to a person. The pieces are
+       deliberately NOT interlocked — a mark that shows the join already made is a
+       mark about a finished picture, which is not what the engine sells.
+
+       Geometry, exact, on a 49 x 22 grid, ink exactly 49 x 22:
+         · pieces   19 x 22 each, corner radius 2, so the mark reads as
+                    19 + 11 + 19
+         · gap      11 units between the bodies (x 19..30): far enough apart to see
+                    at 32 px, close enough that the pair still reads as one object
+         · socket   knocked out of the settled piece on its right edge with
+                    fill-rule="evenodd". Mouth 4 tall (y 9..13); bulb r 3.6
+                    centred (14.3, 11); the arc meets the mouth where the bulb's
+                    chord is 4 wide, i.e. x = 14.3 + sqrt(3.6^2 - 2^2) = 17.2933.
+                    The bulb's rightmost point sits only 1.1 inside the edge, which
+                    is what a real knob does — a long neck turns a jigsaw into a
+                    padlock
+         · knob     the same profile mirrored on the arriving piece: bulb r 3.6
+                    centred (25.3, 11), neck y 9..13. Tip at x 21.7, so it
+                    protrudes 8.3 — exactly the socket's depth — and stops 2.7
+                    short of it. That clearance is the point of the mark: this is
+                    the moment before the click, not after it
+         · neck     drawn as rect + circle in one ink, the rect reaching 1.8 past
+                    the bulb's chord, so the union has a jigsaw's re-entrant corner
+                    and no seam. Both are painted BEFORE the body, whose edge then
+                    covers the 1-unit overlap: the amber reads as part of the
+                    arriving piece instead of sitting on top of it
+
+       Fills, not the family's 5-unit stroke: a 4-unit mouth drawn at stroke 5
+       would close the socket and melt the knob into a blob. So this mark is a
+       solid silhouette where marks A and B are line work — a decision, recorded
+       so nobody "fixes" it later. A knob this small only survives 16 px as mass.
+
+       Colour is the same two-token pair the application uses: teal #2dd4bf for
+       data already in place, amber #eab308 for the one thing still to be done.
+       There is exactly one amber element, as in mark A. -->
+  <path fill="#2dd4bf" fill-rule="evenodd" d="M2 0H17A2 2 0 0 1 19 2V20A2 2 0 0 1 17 22H2A2 2 0 0 1 0 20V2A2 2 0 0 1 2 0ZM19 9H17.2933A3.6 3.6 0 1 0 17.2933 13H19Z"/>
+  <g fill="#eab308">
+    <circle cx="25.3" cy="11" r="3.6"/>
+    <rect x="26.5" y="9" width="4.5" height="4"/>
+  </g>
+  <path fill="#2dd4bf" d="M32 0H47A2 2 0 0 1 49 2V20A2 2 0 0 1 47 22H32A2 2 0 0 1 30 20V2A2 2 0 0 1 32 0Z"/>
+</svg>

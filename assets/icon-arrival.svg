@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Help Studios — concept 1, the arrival">
+  <title>Help Studios — concept 1, the arrival</title>
+  <!-- Candidate 1. H, E and L are locked in the 2x2 grid; the P is still
+       travelling, with a dashed slot showing where it lands and one person
+       moving it into place. -->
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <rect x="36" y="34" width="24" height="24" rx="6" fill="none" stroke="#2dd4bf" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="3 2.4"/>
+  <g stroke="#2dd4bf" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M11 9v16"/>
+    <path d="M23 9v16"/>
+    <path d="M11 17h12"/>
+    <path d="M41 9v16"/>
+    <path d="M41 9h12"/>
+    <path d="M41 17h9"/>
+    <path d="M41 25h12"/>
+    <path d="M11 39v16"/>
+    <path d="M11 55h12"/>
+  </g>
+  <g stroke="#eab308" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(3 -4)">
+    <path d="M41 39v16"/>
+    <path d="M41 39h12"/>
+    <path d="M41 47h12"/>
+    <path d="M53 39v8"/>
+  </g>
+  <g fill="#eab308" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round">
+    <circle cx="37" cy="47" r="2.6"/>
+    <path d="M33.5 51h7v3.5a3.5 3.5 0 0 1-7 0z"/>
+  </g>
+</svg>

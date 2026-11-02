@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- The tile for mark D: the same 64-grid and 14-radius as favicon.svg and
+       tile-a.svg, so it drops straight into make-icons.js, and the same faint teal
+       hairline that separates a dark tile from a dark tab bar.
+
+       Mark D is 49 x 22 — a wide mark in a square box, which is the one real cost
+       of this direction and is recorded here rather than discovered later. Scaled
+       56/49 = 1.142857 it is 56 x 25.14, centred at (4, 19.43): 8 units of side
+       margin, 19.43 above and below. That is as large as it goes without cropping
+       a piece, and cropping is not available to a mark whose meaning is "two things
+       about to meet".
+
+       At 16 px the tile draws each piece 5.4 x 6.3 px with a 2 px amber knob and a
+       3.1 px gap: the pair still reads and the knob survives as a bright fleck, but
+       the socket is gone. If the favicon matters more than the lockup, mark A remains
+       the better tile — that is a real trade, not a preference.
+
+       This file is a candidate, not the live favicon. favicon.svg stays untouched
+       until a direction is chosen (see website/README.md). -->
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="#2dd4bf" stroke-opacity="0.28"/>
+  <g transform="translate(4 19.4286) scale(1.142857)">
+    <path fill="#2dd4bf" fill-rule="evenodd" d="M2 0H17A2 2 0 0 1 19 2V20A2 2 0 0 1 17 22H2A2 2 0 0 1 0 20V2A2 2 0 0 1 2 0ZM19 9H17.2933A3.6 3.6 0 1 0 17.2933 13H19Z"/>
+    <g fill="#eab308">
+      <circle cx="25.3" cy="11" r="3.6"/>
+      <rect x="26.5" y="9" width="4.5" height="4"/>
+    </g>
+    <path fill="#2dd4bf" d="M32 0H47A2 2 0 0 1 49 2V20A2 2 0 0 1 47 22H32A2 2 0 0 1 30 20V2A2 2 0 0 1 32 0Z"/>
+  </g>
+</svg>

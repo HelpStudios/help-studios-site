@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Help Studios — concept 3, carried">
+  <title>Help Studios — concept 3, carried</title>
+  <!-- Candidate 3. The completed HELP grid is held up by three people along the
+       bottom edge — the letters ride on the team. -->
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <g stroke="#2dd4bf" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M11 9v12"/>
+    <path d="M23 9v12"/>
+    <path d="M11 15h12"/>
+    <path d="M41 9v12"/>
+    <path d="M41 9h11"/>
+    <path d="M41 15h8"/>
+    <path d="M41 21h11"/>
+    <path d="M11 29v12"/>
+    <path d="M11 41h12"/>
+    <path d="M41 29v12"/>
+    <path d="M41 29h11"/>
+    <path d="M41 36h11"/>
+    <path d="M52 29v7"/>
+  </g>
+  <g fill="#eab308" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round">
+    <circle cx="12" cy="45.5" r="2.8"/>
+    <path d="M8 49.9h8v4a4 4 0 0 1-8 0z"/>
+    <circle cx="32" cy="45.5" r="2.8"/>
+    <path d="M28 49.9h8v4a4 4 0 0 1-8 0z"/>
+    <circle cx="52" cy="45.5" r="2.8"/>
+    <path d="M48 49.9h8v4a4 4 0 0 1-8 0z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 299 48" width="299" height="48" role="img" aria-label="Help Studios — people data, connected">
+  <title>Help Studios — people data, connected</title>
+  <!-- One-colour lockup: everything is currentColor, so it inherits the text colour
+       when inlined, and prints from a single plate. The tagline is set at 72%
+       opacity rather than a second ink — screening is available on every press, a
+       second spot colour is not.
+
+       In one colour the amber knob stops being an accent and becomes pure form,
+       which is the test of whether the mark was drawn well enough to survive it. -->
+  <style>
+    .hsm-wm  { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 32px; letter-spacing: 1.44px; font-kerning: normal; }
+    .hsm-wm-heavy { font-weight: 780; fill: currentColor; }
+    .hsm-wm-light { font-weight: 300; fill: currentColor; }
+    .hsm-tag { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 3.15px; fill: currentColor; fill-opacity: 0.72; }
+  </style>
+
+  <g transform="translate(0 2.75)" color="currentColor">
+    <path fill="currentColor" fill-rule="evenodd" d="M2 0H17A2 2 0 0 1 19 2V20A2 2 0 0 1 17 22H2A2 2 0 0 1 0 20V2A2 2 0 0 1 2 0ZM19 9H17.2933A3.6 3.6 0 1 0 17.2933 13H19Z"/>
+    <g fill="currentColor">
+      <circle cx="25.3" cy="11" r="3.6"/>
+      <rect x="26.5" y="9" width="4.5" height="4"/>
+    </g>
+    <path fill="currentColor" d="M32 0H47A2 2 0 0 1 49 2V20A2 2 0 0 1 47 22H32A2 2 0 0 1 30 20V2A2 2 0 0 1 32 0Z"/>
+  </g>
+
+  <text class="hsm-wm hsm-wm-heavy" x="64" y="25.75">HELP</text>
+  <text class="hsm-wm hsm-wm-light" x="155.61" y="25.75">STUDIOS</text>
+  <text class="hsm-tag" x="64" y="43.75">PEOPLE DATA. CONNECTED.</text>
+</svg>

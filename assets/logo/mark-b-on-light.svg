@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 37" width="32" height="37" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- Mark B on a light ground: teal 700 and amber 700, per the contrast note in
+       mark-a-on-light.svg. -->
+  <g fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round">
+    <path d="M2.5 12.6V34.5"/>
+    <path d="M29.5 12.6V34.5"/>
+    <path d="M2.5 23.55H29.5"/>
+  </g>
+  <circle cx="2.5" cy="4.2" r="4.2" fill="#0f766e"/>
+  <circle cx="29.5" cy="4.2" r="4.2" fill="#b45309"/>
+</svg>

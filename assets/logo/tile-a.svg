@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- The favicon candidate for mark A: the tile the site would use, built on the
+       same 64-grid and 14-radius as the current favicon so it drops straight into
+       make-icons.js, and keeps the faint teal hairline that separates the tile
+       from a dark tab bar.
+
+       Mark A is scaled 1.1 (35.2 x 44) and centred, which is as large as the tile
+       takes before the node crowds the top edge — 16 px is 4 px of padding, and
+       every one of those pixels is doing work at that size.
+
+       This file is a candidate, not the live favicon. favicon.svg stays untouched
+       until a direction is chosen (see website/README.md). -->
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="#2dd4bf" stroke-opacity="0.28"/>
+  <g transform="translate(14.4 10) scale(1.1)">
+    <g fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round">
+      <path d="M2.5 14.9V37.5"/>
+      <path d="M29.5 14.9V37.5"/>
+      <path d="M2.5 26.2H29.5"/>
+    </g>
+    <circle cx="29.5" cy="3.6" r="3.6" fill="#eab308"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 235 102" width="235" height="102" role="img" aria-label="Help Studios — people data, connected">
+  <title>Help Studios — people data, connected</title>
+  <!-- Stacked lockup, for dark grounds: used where the horizontal lockup would be
+       squeezed — a slide corner, a banner, a square social card, the back of a
+       card. The wordmark pair is centred on the mark, and the tagline is centred
+       on the pair, so the block has one axis.
+
+         mark       35.2 x 44, x 97.88 (centred on 115.48), y 0..44
+         wordmark   baseline 80 (44 + 12 clear + cap 24); HELP 0..142.81,
+                    STUDIOS 91.61..230.96
+         tagline    text-anchor middle at 115.48, baseline 98, ink 215.14 wide
+         ink box    230.96 x 98 -->
+  <style>
+    .hs-wm  { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 32px; letter-spacing: 1.44px; font-kerning: normal; }
+    .hs-wm-heavy { font-weight: 780; fill: #e8eef7; }
+    .hs-wm-light { font-weight: 300; fill: #e8eef7; }
+    .hs-tag { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 3.15px; fill: #2dd4bf; }
+  </style>
+
+  <g transform="translate(97.88 0) scale(1.1)">
+    <g fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round">
+      <path d="M2.5 14.9V37.5"/>
+      <path d="M29.5 14.9V37.5"/>
+      <path d="M2.5 26.2H29.5"/>
+    </g>
+    <circle cx="29.5" cy="3.6" r="3.6" fill="#eab308"/>
+  </g>
+
+  <text class="hs-wm hs-wm-heavy" x="0" y="80">HELP</text>
+  <text class="hs-wm hs-wm-light" x="91.61" y="80">STUDIOS</text>
+  <text class="hs-tag" x="115.48" y="98" text-anchor="middle">PEOPLE DATA. CONNECTED.</text>
+</svg>

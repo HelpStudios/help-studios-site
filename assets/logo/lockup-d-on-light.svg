@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 299 48" width="299" height="48" role="img" aria-label="Help Studios — people data, connected">
+  <title>Help Studios — people data, connected</title>
+  <!-- Primary lockup for light grounds. Identical geometry to lockup-d-on-dark.svg;
+       only the ink changes, so the two can never drift:
+
+         mark      teal 700 #0f766e / amber 700 #b45309
+         wordmark  #0b1220 — the site's own base colour, not pure black
+         tagline   teal 700 #0f766e (4.9:1 on white; #2dd4bf is 1.85:1 and fails) -->
+  <style>
+    .hsl-wm  { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 32px; letter-spacing: 1.44px; font-kerning: normal; }
+    .hsl-wm-heavy { font-weight: 780; fill: #0b1220; }
+    .hsl-wm-light { font-weight: 300; fill: #0b1220; }
+    .hsl-tag { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 3.15px; fill: #0f766e; }
+  </style>
+
+  <g transform="translate(0 2.75)">
+    <path fill="#0f766e" fill-rule="evenodd" d="M2 0H17A2 2 0 0 1 19 2V20A2 2 0 0 1 17 22H2A2 2 0 0 1 0 20V2A2 2 0 0 1 2 0ZM19 9H17.2933A3.6 3.6 0 1 0 17.2933 13H19Z"/>
+    <g fill="#b45309">
+      <circle cx="25.3" cy="11" r="3.6"/>
+      <rect x="26.5" y="9" width="4.5" height="4"/>
+    </g>
+    <path fill="#0f766e" d="M32 0H47A2 2 0 0 1 49 2V20A2 2 0 0 1 47 22H32A2 2 0 0 1 30 20V2A2 2 0 0 1 32 0Z"/>
+  </g>
+
+  <text class="hsl-wm hsl-wm-heavy" x="64" y="25.75">HELP</text>
+  <text class="hsl-wm hsl-wm-light" x="155.61" y="25.75">STUDIOS</text>
+  <text class="hsl-tag" x="64" y="43.75">PEOPLE DATA. CONNECTED.</text>
+</svg>
