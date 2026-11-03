@@ -1,7 +1,0 @@
-# help-studios.com
-# The marketing site is fully static; nothing here is generated or blocked.
-
-User-agent: *
-Allow: /
-
-Sitemap: https://help-studios.com/sitemap.xml
