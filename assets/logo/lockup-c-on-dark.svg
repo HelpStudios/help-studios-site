@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 235 46" width="235" height="46" role="img" aria-label="Help Studios — people data, connected">
+  <title>Help Studios — people data, connected</title>
+  <!-- Direction C, for dark grounds: no symbol at all. The words do the work,
+       which is a legitimate answer for a company whose product is judgement
+       rather than software. It was the old mark's best asset — a heavy "HELP", a
+       light "studios" — set properly in caps and tracked, with the standing line
+       under it.
+
+       The honest cost is written on the page in the lab: a tab still needs an
+       icon, so C borrows mark A for the favicon and the two never quite feel like
+       one thing. That is why C is offered as a lockup choice, not a
+       recommendation.
+
+         wordmark baseline 24 (cap top 0); HELP 0..85.61, STUDIOS 91.61..230.96
+         tagline  baseline 42, ink 215.14 wide -->
+  <style>
+    .hs-wm  { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 32px; letter-spacing: 1.44px; font-kerning: normal; }
+    .hs-wm-heavy { font-weight: 780; fill: #e8eef7; }
+    .hs-wm-light { font-weight: 300; fill: #e8eef7; }
+    .hs-tag { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 3.15px; fill: #2dd4bf; }
+  </style>
+
+  <text class="hs-wm hs-wm-heavy" x="0" y="24">HELP</text>
+  <text class="hs-wm hs-wm-light" x="91.61" y="24">STUDIOS</text>
+  <text class="hs-tag" x="0" y="42">PEOPLE DATA. CONNECTED.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 37" width="32" height="37" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- Mark B — "two people, one line".
+
+       The same 5-unit construction, read as people rather than data: each column
+       carries a head, and the crossbar is the connection between them. The right
+       figure is amber, because the engine's job is to point at the one worth
+       looking at, not to paint everyone the same.
+
+       Ink is exactly 32 x 37. Heads r 4.2 at (2.5, 4.2) and (29.5, 4.2), a 1.7
+       gap above the columns (10.1), crossbar at 23.55 — the midpoint of the
+       column block. Honest limitation, recorded here rather than discovered
+       later: at 16 px the gap closes and the mark reads as an H with two bumps,
+       which is why this is a direction to judge, not a recommendation. -->
+  <g fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round">
+    <path d="M2.5 12.6V34.5"/>
+    <path d="M29.5 12.6V34.5"/>
+    <path d="M2.5 23.55H29.5"/>
+  </g>
+  <circle cx="2.5" cy="4.2" r="4.2" fill="#2dd4bf"/>
+  <circle cx="29.5" cy="4.2" r="4.2" fill="#eab308"/>
+</svg>

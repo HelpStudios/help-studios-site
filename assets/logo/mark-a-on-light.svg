@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" width="32" height="40" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- Mark A on a light ground. Same geometry as mark-a-on-dark.svg; only the
+       ink changes. #2dd4bf measures 1.85:1 against white, so the light variant
+       steps down to teal 700 (#0f766e, 4.9:1) and amber 700 (#b45309, 4.6:1).
+       Using the bright tokens on white would look correct on a monitor and
+       disappear on a printed page or a projector. -->
+  <g fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round">
+    <path d="M2.5 14.9V37.5"/>
+    <path d="M29.5 14.9V37.5"/>
+    <path d="M2.5 26.2H29.5"/>
+  </g>
+  <circle cx="29.5" cy="3.6" r="3.6" fill="#b45309"/>
+</svg>

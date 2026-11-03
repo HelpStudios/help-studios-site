@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 293 48" width="293" height="48" role="img" aria-label="Help Studios — people data, connected">
+  <title>Help Studios — people data, connected</title>
+  <!-- Primary lockup, for dark grounds: mark A, then the wordmark, then the
+       standing line.
+
+       Layout, all of it measured rather than eyeballed:
+         · mark           32 x 40 ink, scaled 1.1 -> 35.2 x 44, origin 0,0
+         · wordmark       Inter 32 px (cap height 24), cap top 1.75, baseline 25.75
+         · weight contrast HELP 780 / STUDIOS 300 — the old mark's one good idea
+                          (a heavy first word, a light second) kept, in caps, so the
+                          lockup and the application's nav read as one brand
+         · tracking       1.44 px (0.045 em); "HELP" run ends at 142.81, a 6 px
+                          word space, "STUDIOS" ends at 288.16
+         · tagline        Inter 10.5 px, 600, 3.15 px tracking (0.30 em),
+                          baseline 43.75, ends at 272.34 — inside the wordmark's
+                          right edge, which is what stops the block looking ragged
+         · optical centring  text block spans 1.75..43.75, centre 22.75; the mark
+                          spans 0..44, centre 22 — the mark sits 0.75 higher, which
+                          is how it reads level without being one
+
+       Type: Inter is bundled with the site (assets/fonts). The fallback stack is
+       Helvetica Neue then Arial, so a machine without Inter still sets the words
+       in a grotesque of the right proportion rather than in Times. Chrome renders
+       this correctly when the file is opened directly or inlined in a page;
+       <img src="….svg"> cannot load the webfont, which is why the PNG masters in
+       png/ exist and are the files to use in decks, email and print. -->
+  <style>
+    .hs-wm  { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 32px; letter-spacing: 1.44px; font-kerning: normal; }
+    .hs-wm-heavy { font-weight: 780; fill: #e8eef7; }
+    .hs-wm-light { font-weight: 300; fill: #e8eef7; }
+    .hs-tag { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 3.15px; fill: #2dd4bf; }
+  </style>
+
+  <g transform="scale(1.1)">
+    <g fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round">
+      <path d="M2.5 14.9V37.5"/>
+      <path d="M29.5 14.9V37.5"/>
+      <path d="M2.5 26.2H29.5"/>
+    </g>
+    <circle cx="29.5" cy="3.6" r="3.6" fill="#eab308"/>
+  </g>
+
+  <text class="hs-wm hs-wm-heavy" x="57.2" y="25.75">HELP</text>
+  <text class="hs-wm hs-wm-light" x="148.81" y="25.75">STUDIOS</text>
+  <text class="hs-tag" x="57.2" y="43.75">PEOPLE DATA. CONNECTED.</text>
+</svg>

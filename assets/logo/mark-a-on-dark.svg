@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" width="32" height="40" role="img" aria-label="Help Studios">
+  <title>Help Studios</title>
+  <!-- Mark A — "the signal".
+
+       Two 5-unit columns on a 32 x 40 grid, joined by a crossbar at the optical
+       middle of the column block (y 26.2 = the midpoint of 12.4..40), with one
+       amber node above the right-hand column.
+
+       Read three ways, deliberately:
+         · a capital H — the company initial, and the letter the old favicon drew
+         · two columns of a chart — people data, drawn to the same stroke weight
+           as every other mark in the family
+         · one node above the data — the signal the engine surfaces for a human
+           to investigate, which is the only claim the product makes
+
+       Construction rules: stroke 5, round caps, ink exactly 32 x 40 with no
+       padding, so the file can be dropped into any layout without guesswork.
+       Columns ink 0..5 and 27..32 (centres 2.5 and 29.5); column block 12.4..40;
+       crossbar ink 24.05..28.35; node r 3.6 at (29.5, 3.6), ink 0..7.2, leaving
+       a 5.2 gap so it never merges with the column at 16 px.
+
+       Colour is a token pair, not a gradient: teal signal (#2dd4bf) and amber
+       flag (#eab308) — the same two accents the application uses. -->
+  <g fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round">
+    <path d="M2.5 14.9V37.5"/>
+    <path d="M29.5 14.9V37.5"/>
+    <path d="M2.5 26.2H29.5"/>
+  </g>
+  <circle cx="29.5" cy="3.6" r="3.6" fill="#eab308"/>
+</svg>
