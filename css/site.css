@@ -274,11 +274,12 @@ p { text-wrap: pretty; }
   white-space: nowrap;
 }
 .brand-name {
-  font-size: 0.8125rem;
-  font-weight: 660;
-  letter-spacing: 0.155em;
-  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Display', 'Segoe UI', 'Helvetica Neue', Inter, Arial, sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  letter-spacing: -0.022em;
   color: var(--c-text);
+  -webkit-font-smoothing: antialiased;
 }
 .brand-rule {
   width: 1px;
@@ -292,17 +293,6 @@ p { text-wrap: pretty; }
   color: var(--c-text-3);
 }
 .brand:hover .brand-product { color: var(--c-text-2); }
-
-/* The supplied mark. 34px is measured, not chosen: at 24px the two heads merge
-   and the arm that closes the p stops reading, and below that the artwork is a
-   silhouette. The lockup in the same folder is the file for decks, print and
-   social, where it has the width to be read properly. */
-.brand-mark {
-  display: block;
-  flex: none;
-  width: auto;
-  height: 34px;
-}
 
 /* The mark costs the bar 68px of width it did not have. Between 1081 and 1180
    the inline nav needs 748px, which leaves 269 for the brand and it was 306, so
@@ -1588,7 +1578,6 @@ p { text-wrap: pretty; }
   .footer-meta { font-size: 0.75rem; }
   .brand-product { display: none; }
   .brand-rule { display: none; }
-  .brand-mark { height: 30px; }
 }
 
 @media (max-width: 420px) {
@@ -2125,3 +2114,36 @@ body {
 .tour:not(.tour-js) .tour-panel { margin-bottom: 40px; }
 .tour:not(.tour-js) .tour-tabs, .tour:not(.tour-js) .tour-nav button { display: none; }
 @media (max-width: 860px) { .tour-stage { grid-template-columns: 1fr; } .tour-pin { width: 24px; height: 24px; font-size: 0.75rem; } }
+
+/* ── From data to reports: the three-step story (owner, 3 Nov 2026) ───────── */
+.section-pipeline { background: var(--c-base-deep); }
+.pipe-story { list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; gap: 3rem; }
+.pipe-step { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2.5rem; align-items: center; }
+.pipe-step-no { margin: 0 0 0.4rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-accent); }
+.pipe-step h3 { margin: 0 0 0.75rem; font-size: 1.5rem; line-height: 1.2; text-wrap: balance; }
+.pipe-step p { margin: 0 0 0.9rem; color: var(--c-text-2); }
+.pipe-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.pipe-chips li { padding: 0.55rem 0.95rem; border: 1px solid var(--c-line-strong); border-radius: 999px; font-size: 0.9rem; color: var(--c-text); background: var(--c-surface); }
+.pipe-shot { margin: 0; }
+.pipe-shot img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.14); }
+.pipe-shot figcaption { margin-top: 0.6rem; font-size: 0.8125rem; color: var(--c-text-3); }
+@media (max-width: 900px) {
+  .pipe-step { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+}
+
+/* Services: named offers (owner, 3 Nov 2026) */
+.service-card p { margin: 0 0 0.7rem; }
+.service-card .service-for { color: var(--c-accent); font-size: 0.875rem; font-weight: 500; }
+.service-card .service-get { color: var(--c-text-2); font-size: 0.9rem; }
+.service-card .service-get strong { color: var(--c-text); }
+.service-flagship { border-color: var(--c-accent-line); background: var(--c-accent-dim); }
+
+/* Where you are heading (owner, 3 Nov 2026) */
+.section-satnav { background: var(--c-base); }
+.satnav-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.satnav-grid .area-card p { margin: 0 0 0.75rem; }
+.satnav-proof { color: var(--c-text); font-size: 0.9375rem; border-left: 2px solid var(--c-accent); padding-left: 0.85rem; }
+.satnav-src { color: var(--c-text-3); font-size: 0.8125rem; }
+.satnav-src a { color: var(--c-accent); }
+.pipe-proof { margin-top: 2rem; max-width: 70ch; }
+@media (max-width: 800px) { .satnav-grid { grid-template-columns: minmax(0, 1fr); } }

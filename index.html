@@ -19,15 +19,15 @@
   <meta property="og:site_name" content="Help Studios">
   <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://help-studios.com/">
-  <meta property="og:title" content="HR intelligence your board can trust — without sending your data anywhere">
-  <meta property="og:description" content="The six areas. One engine. Built for regulated HR. Your files are processed in your browser and never uploaded to Help Studios.">
+  <meta property="og:title" content="You have the HRIS data. Here is what it becomes. | Help Studios">
+  <meta property="og:description" content="Clean, audit and model your HRIS exports, then get the Power BI reports a team would build. Processed in your browser, never uploaded.">
   <meta property="og:image" content="https://help-studios.com/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Help Studios — HR Intelligence. Engine surfaces the signal. HR investigates.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HR intelligence your board can trust — without sending your data anywhere">
-  <meta name="twitter:description" content="The six areas. One engine. Built for regulated HR. Your files are processed in your browser and never uploaded to Help Studios.">
+  <meta name="twitter:description" content="Clean, audit and model your HRIS exports, then get the Power BI reports a team would build. Processed in your browser, never uploaded.">
   <meta name="twitter:image" content="https://help-studios.com/assets/og-image.png">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -62,18 +62,13 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ── HEADER ───────────────────────────────────────────────────────────────
-       One bar, one primary action. The wordmark treatment matches the product
-       itself (Inter 600, uppercase, tracked), so the marketing site and the
-       application read as one thing rather than two vendors. The supplied mark
-       sits to its left at 34px — the smallest size at which the two figures,
-       the letterforms they assemble and the spark above them all still read.
-       Below that the artwork becomes a silhouette, so the type carries the name
-       and the mark is decoration. Assets are cut from the master by
-       tools/make-help-studios-assets.js; see assets/logo/help/README.md. -->
+       One bar, one primary action. The name is set as type only, in the platform's
+       own system face (SF Pro on Apple devices, Segoe UI Variable on Windows):
+       "Help Studios", no mark (owner, 3 Nov 2026: drop the logo, plain Apple-style
+       typography). -->
   <header class="site-header" id="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Help Studios — HR Intelligence, back to top">
-        <img class="brand-mark" src="assets/logo/help/help-mark-on-dark.png" alt="" width="400" height="240">
         <span class="brand-name">Help Studios</span>
         <span class="brand-rule" aria-hidden="true"></span>
         <span class="brand-product">HR Intelligence</span>
@@ -85,15 +80,14 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#frustrations">The problem</a>
-        <a href="#product">The product</a>
+        <a href="#satnav">Where you are heading</a>
+        <a href="#pipeline">Data to reports</a>
         <a href="#tour">Tour</a>
-        <a href="#how">How it works</a>
+        <a href="#how">How it reads files</a>
         <a href="#try">Try it</a>
-        <a href="#powerbi">Power BI</a>
         <a href="#services">Services</a>
-        <a href="#trust">Trust</a>
-        <a class="btn btn-primary btn-sm nav-cta" href="#demo">Watch the demo</a>
+        <a href="#trust">About</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Talk to Peter</a>
       </nav>
     </div>
   </header>
@@ -106,18 +100,16 @@
         <div class="hero-copy">
           <p class="eyebrow">For the HR leader who is also the MI team</p>
 
-          <h1>HR intelligence your board can trust — without sending your data anywhere.</h1>
+          <h1>Reports that tell you where you are heading, not only where you have been.</h1>
 
           <p class="lede">
-            Your headcount, absence and leavers live in one HRIS. Recruitment, learning and employee relations live somewhere else, often a spreadsheet. HR Intelligence reads the exports you already produce, maps them onto one model and answers the board&rsquo;s questions with a trail back to the file. It runs in your browser. Nothing is sent to Help Studios.
+            Absence, attrition, employee relations, recruitment and learning: cleaned, joined together and read against your own history, so a pocket, a single point of failure or a rising trend shows up while there is still time to change direction. HR intelligence your board can trust, without sending your data anywhere.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#demo">
-              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
-              Watch the demo
-            </a>
-            <a class="link-arrow" href="#product">See the product<span aria-hidden="true"> →</span></a>
+            <a class="btn btn-primary" href="#try">Try it on a file</a>
+            <a class="link-arrow" href="#satnav">See what it reads<span aria-hidden="true"> →</span></a>
+            <a class="link-arrow" href="#contact">Talk to Peter<span aria-hidden="true"> →</span></a>
           </div>
 
           <ul class="hero-facts">
@@ -169,104 +161,113 @@
       </div>
     </section>
 
-    <!-- ── FRUSTRATIONS ────────────────────────────────────────────────────────
-         The five things HR leaders actually say about month-end, each paired with
-         the part of the product that answers it. Every answer maps to a shipped
-         screen or engine behaviour — nothing here is a roadmap promise. -->
-    <section class="section section-frustrations" id="frustrations" aria-labelledby="frustrations-title">
+        <!-- == WHERE YOU ARE HEADING (owner, 3 Nov 2026): what the model does, from the code and its own tests ==
+         Every claim here is something the product does or something it measured about itself; every outside
+         figure is linked to its source. No scenarios, no invented customers, no invented percentages. -->
+    <section class="section section-satnav" id="satnav" aria-labelledby="satnav-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">The month-end you already know</p>
-          <h2 id="frustrations-title">It is not an intelligence problem. It is a stitching problem.</h2>
+          <p class="eyebrow">Where you are heading</p>
+          <h2 id="satnav-title">A monthly report is a rear-view mirror. This reads the road ahead.</h2>
           <p class="section-lede">
-            None of this is a complaint about your HRIS. It does the job it was bought for. The
-            gap is the layer between the system of record and the board pack — and it is the
-            layer HR teams rebuild by hand every month.
+            Reporting that only describes last month tells you what has already happened. The model
+            keeps your history, joins the areas that normally sit apart, and shows which groups are
+            drifting away from the rest and where a measure is heading, so you can act while it still
+            matters. It also tells you how far to trust each reading.
           </p>
         </div>
 
-        <div class="frustration-grid">
-          <article class="frustration-card">
-            <p class="frustration-q">It is the third of the month and I am stitching five exports into one spreadsheet. Again.</p>
-            <p class="frustration-a"><strong>One drop zone.</strong> The engine reads the exports you already produce and maps every source onto one vocabulary, so the stitch happens once — not every month.</p>
-          </article>
-          <article class="frustration-card">
-            <p class="frustration-q">The board asks where a number came from, and I cannot prove it.</p>
-            <p class="frustration-a"><strong>Provable provenance.</strong> Every measure carries its source fields and its formula, and the Power BI export keeps that trail intact — back to the file you uploaded.</p>
-          </article>
-          <article class="frustration-card">
-            <p class="frustration-q">Absence and attrition sit in my HRIS, employee relations in a spreadsheet and learning in another system, so I only ever see them apart.</p>
-            <p class="frustration-a"><strong>Joined-up dots.</strong> Cross-module signals link them: an absence pocket, the ER exposure behind it, and the retention-risk factors present, in one view.</p>
-          </article>
-          <article class="frustration-card">
-            <p class="frustration-q">I find out who is leaving when they resign.</p>
-            <p class="frustration-a"><strong>Retention risk, honestly scored.</strong> The factors present in people who left, and who still here carries them — with the critical roles that have no cover, and a plain statement when the pattern is no better than chance on your data. A signal to investigate, never a decision.</p>
-          </article>
-          <article class="frustration-card">
-            <p class="frustration-q">A vendor renames a column, a report breaks, and nobody notices for a month.</p>
-            <p class="frustration-a"><strong>Checked on every load.</strong> Schema drift and data health are surfaced on upload, with the exact rows to fix — before the board pack is built on them.</p>
-          </article>
-        </div>
+        <ol class="area-grid satnav-grid">
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">01</span>
+            <h3>Is a pocket forming?</h3>
+            <p>Every department and division is compared with the organisation. A group is called a pocket when its twelve-month figure is at least 1.25 times the organisation&rsquo;s, and the rule and the numbers behind it are shown on the screen. Weekday patterns are read as well.</p>
+            <p class="satnav-proof"><strong>In our test data:</strong> one department starts 61.6% of its sickness episodes on a Monday or Friday; the other seven sit between 26.7% and 29.5%. A single organisation-wide figure would look ordinary.</p>
+            <p class="satnav-src">Published research finds one-day sickness starts on Mondays and Fridays at about 1.4 to 1.9 times the rate of other weekdays, though they are a small share of all days lost: a prompt to look, not a verdict. <a href="https://doi.org/10.1136/oem.58.12.818" rel="noopener">Occup Environ Med, 2001</a></p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">02</span>
+            <h3>What if a key person is off?</h3>
+            <p>It finds managers with no credible deputy within one grade step, and where that sits alongside a team under strain: an establishment gap, an unusual absence pattern, leave not being taken, a manager already rated red. The question it puts to you is where one absence would stop work.</p>
+            <p class="satnav-src">This is a structural check on cover, not a forecast. Teams under three people are never judged, and the engine says plainly when it has no evidence either way.</p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">03</span>
+            <h3>What do the areas say together?</h3>
+            <p>Ten reads that each join two or more areas, such as attrition with absence, employee relations and engagement; regretted leavers by manager with what their exit interviews say; pay position against performance and the function&rsquo;s attrition trend. Each shows the areas it joins and a count.</p>
+            <p class="satnav-src">Absence and turnover are linked in the research, moderately: a corrected correlation of about .25 across the literature, and smaller in recent studies. So a joined-up signal is a reason to investigate, never a conclusion. <a href="https://doi.org/10.1002/job.778" rel="noopener">J Organ Behav, 2012</a></p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">04</span>
+            <h3>How far should you trust it?</h3>
+            <p>The leaver-risk model is checked against people who have already left, on your own history: how many it flagged, how many of those left within six months, and how that compares with chance. A navigation system is only useful if it says how often it has been right on your roads.</p>
+            <p class="satnav-proof"><strong>On our synthetic test data</strong> it scored 1.0, which means no better than chance, and the screen said exactly that. Synthetic data says nothing about your organisation; on yours it will report whatever is true.</p>
+          </li>
+        </ol>
+
+        <p class="section-note">All figures above are from synthetic test data or from linked, published research. Timeliness is the other half: your month&rsquo;s exports are read in seconds in your browser, so the picture is there the day the files land.</p>
       </div>
     </section>
 
-    <!-- ── PRODUCT SHOTS ───────────────────────────────────────────────────────
-         Real captures of the running engine on the synthetic Meridian Bank
-         fixtures — not mock-ups. The application chrome is cropped off by
-         tools/make-screens.js; the data inside is the demo data. Each image is a
-         button that opens a lightbox (js/site.js), and the caption says what the
-         screen proves. -->
-    <section class="section section-product" id="product" aria-labelledby="product-title">
+    <!-- == FROM DATA TO REPORTS (owner, 3 Nov 2026: the missing main story) ======================
+         Three steps, each proved by a real image: the mapping desk (clean and audit), and a real
+         Power BI Desktop render of the generated report. No invented statistics on this site. -->
+    <section class="section section-pipeline" id="pipeline" aria-labelledby="pipeline-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">The product, not a promise</p>
-          <h2 id="product-title">This is the engine your exports actually reach.</h2>
+          <p class="eyebrow">From export to board pack</p>
+          <h2 id="pipeline-title">Messy exports in. The reports a team would build, out.</h2>
           <p class="section-lede">
-            Four screens from a real run on synthetic demo data. No stock photography, no
-            invented dashboards, and no numbers typed in for the photograph.
+            Most HR functions hold years of HRIS data they cannot use, because turning it into
+            something reliable takes a team and weeks. This is that work, done once, the same way
+            every month, with every step visible.
           </p>
         </div>
 
-        <div class="shot-grid">
-          <figure class="shot">
-            <button class="shot-open" type="button" aria-label="Expand: Headlines Report">
-              <img src="assets/screens/headlines-report.jpg" alt="The Headlines Report for Meridian Bank, showing headcount, FTE, absence, attrition and training compliance with red, amber and green status." decoding="async" width="1200" height="662">
-            </button>
-            <figcaption>
-              <strong>Headlines Report</strong>
-              <span>What changed this month, on one screen — the board pack, before PowerPoint.</span>
-            </figcaption>
-          </figure>
-          <figure class="shot">
-            <button class="shot-open" type="button" aria-label="Expand: Compare">
-              <img src="assets/screens/compare.jpg" alt="The Compare screen: headcount April 2026 against May 2026 for Meridian Bank, 3,011 opening, 33 joined, 31 left, 3,013 closing, with the bridge that adds up and links to who joined, who left and who changed." decoding="async" width="1200" height="662">
-            </button>
-            <figcaption>
-              <strong>Compare</strong>
-              <span>Any two months or two files, side by side: what is new, what has gone, what changed — and a bridge that always adds up.</span>
-            </figcaption>
-          </figure>
-          <figure class="shot">
-            <button class="shot-open" type="button" aria-label="Expand: Retention Risk">
-              <img src="assets/screens/retention-risk.jpg" alt="The Retention Risk screen, ranking employees by calculated flight risk and showing Employment Rights Act 2025 exposure." decoding="async" width="1200" height="662">
-            </button>
-            <figcaption>
-              <strong>Retention Risk</strong>
-              <span>Which factors are present, who carries them, and which critical roles have no succession cover.</span>
-            </figcaption>
-          </figure>
-          <figure class="shot">
-            <button class="shot-open" type="button" aria-label="Expand: Absence">
-              <img src="assets/screens/absence.jpg" alt="The Absence screen, showing the absence rate against a company target and a breakdown of days by absence type." decoding="async" width="1200" height="662">
-            </button>
-            <figcaption>
-              <strong>Absence</strong>
-              <span>Rate, trend and type — the context an absence pocket needs before anyone acts.</span>
-            </figcaption>
-          </figure>
-        </div>
+        <ol class="pipe-story">
+          <li class="pipe-step">
+            <div class="pipe-step-copy">
+              <p class="pipe-step-no">Step 1</p>
+              <h3>Bring what you already have</h3>
+              <p>Workday, SAP SuccessFactors, Oracle, MHR iTrent, Zellis ResourceLink, BambooHR, a payroll file, a spreadsheet someone built years ago. Different column names, different date formats, the same facts underneath. Drop them in; nothing is uploaded.</p>
+            </div>
+            <ul class="pipe-chips" aria-label="Examples of sources it reads">
+              <li>Workday</li><li>SuccessFactors</li><li>Oracle HCM</li><li>iTrent</li><li>ResourceLink</li><li>BambooHR</li><li>Payroll</li><li>Excel and Access (EUC)</li>
+            </ul>
+          </li>
 
-        <p class="shot-note">Demo data — Meridian Bank, a synthetic fixture. The engine, calculations and layout are the shipped product.</p>
+          <li class="pipe-step pipe-step-shot">
+            <div class="pipe-step-copy">
+              <p class="pipe-step-no">Step 2</p>
+              <h3>It cleans, audits and puts them on one model</h3>
+              <p>Columns are mapped to one set of fields. What it cannot place on its own comes to a short list, biggest effect first, one click each, and your decision is remembered for next month. Conflicts between files are reported, not hidden, and every figure keeps its trail back to the source file.</p>
+            </div>
+            <figure class="pipe-shot">
+              <img src="assets/screens/mapping-desk.jpg" alt="The Mapping Desk: seven things need a decision, each with the column it concerns, a drop-down to choose the field, and a note saying whether it blocks the upload." width="1200" height="662" loading="lazy" decoding="async">
+              <figcaption>The Mapping Desk on synthetic Meridian Bank files: what it could not place, ranked.</figcaption>
+            </figure>
+          </li>
+
+          <li class="pipe-step pipe-step-shot">
+            <div class="pipe-step-copy">
+              <p class="pipe-step-no">Step 3</p>
+              <h3>Out come the Power BI reports</h3>
+              <p>The same model produces a Power BI project: one page per area, headline figures, tables and charts, ready to open and refresh. For slicing by division, department and month it also writes a star-schema model with a library of measures, so Power BI recalculates from the engine&rsquo;s own figures and never disagrees with them.</p>
+              <ul class="check-list">
+                <li><span class="tick" aria-hidden="true"></span>Tick the screens you want, or describe the report in a sentence</li>
+                <li><span class="tick" aria-hidden="true"></span>Opened and checked in the real Power BI Desktop</li>
+                <li><span class="tick" aria-hidden="true"></span>No team of report builders, no parallel spreadsheet</li>
+              </ul>
+            </div>
+            <figure class="pipe-shot">
+              <img src="assets/screens/powerbi-headlines.jpg" alt="A Power BI report page, Headlines Report 31 May 2026: 3,013 active employees, headcount by division, absence, attrition, learning, recruitment, diversity, employee relations, organisation design and management risk panels, each with a one-line summary." width="1373" height="1052" loading="lazy" decoding="async">
+              <figcaption>A page rendered in Power BI from the generated project, synthetic Meridian Bank data. Power BI displays the figures; the engine calculates them.</figcaption>
+            </figure>
+          </li>
+        </ol>
+
+        <p class="satnav-proof pipe-proof"><strong>Tested against deliberately hostile files:</strong> nine exports carrying 24 habits of real HRIS and spreadsheet extracts (report titles above the header, totals inside the data, several date formats, differently padded ids, European number formats, a pivot-shaped file). 19 were handled correctly first time, 5 were flagged for a person to decide, and none was silently read wrong. The audit of all nine took 3.8 seconds on a laptop, including opening the browser.</p>
+        <p class="section-note">Synthetic demo data throughout. To see this on your own exports, <a href="#contact">talk to us</a>.</p>
       </div>
     </section>
 
@@ -852,542 +853,68 @@
       </div>
     </section>
 
-    <!-- ── WHAT YOU GET ───────────────────────────────────────────────────────
-         The HRIS is the screen; this is the remote. The argument runs in the
-         order a leader meets it: what the gap costs, then the five jobs the
-         missing layer has to do, then twenty named capabilities that prove it.
-         Every feature named below is a real screen in the product (see
-         docs/menu-guide); nothing here is a roadmap promise. All twenty sit in
-         the markup, so the section is complete with JavaScript off — the jump
-         row is plain anchor links and only gains an active state from script. -->
-    <section class="section section-features" id="features" aria-labelledby="features-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">The layer your HRIS never shipped with</p>
-          <h2 id="features-title">You bought the right TV. You're missing the remote.</h2>
-          <p class="section-lede">
-            Your HRIS — Workday, Oracle, SAP, People XD, BambooHR, or the one with no logo
-            at all — is an excellent system of record: you were right to buy it. What it was
-            never built to ship is the layer that turns records into answers: what changed,
-            who it is about, why it moved, and a number you can defend to the board.
-            HR Intelligence reads the exports you already produce and adds that layer,
-            while your HRIS keeps doing the job it was bought for.
-          </p>
-        </div>
-
-        <div class="feature-gap">
-          <p class="feature-gap-label">The gap, in plain terms</p>
-          <ul class="feature-gap-list">
-            <li>The board asks a question on Monday; the answer takes two weeks and three analysts.</li>
-            <li>HR and Finance never reconcile to the same total.</li>
-            <li>You cannot defend a number under scrutiny because you cannot trace where it came from.</li>
-          </ul>
-        </div>
-
-        <nav class="feature-jump" aria-label="Jump to a group of features">
-          <a href="#feature-signal">The signal</a>
-          <a href="#feature-people">Who &amp; why</a>
-          <a href="#feature-trust">Trust the number</a>
-          <a href="#feature-board">Board-ready</a>
-          <a href="#feature-control">Your rules</a>
-        </nav>
-
-        <div class="feature-remote" id="feature-signal">
-          <div class="feature-remote-head">
-            <h3>The signal <span class="feature-remote-count">01–04</span></h3>
-            <p class="feature-remote-note">Your HRIS stores every change; it never tells you which one matters. This does.</p>
-          </div>
-          <ol class="feature-grid">
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">01</span>
-              <h4>Headlines Report</h4>
-              <p>What changed since last month, on one screen — not the same dashboard you read last month.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">02</span>
-              <h4>Executive Pack</h4>
-              <p>The rolling 12-month view the board actually asks for.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">03</span>
-              <h4>Monthly Brief</h4>
-              <p>The story behind each number, in plain English.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">04</span>
-              <h4>Insufficient-data states</h4>
-              <p>When a file is missing, it says so — never a fabricated figure.</p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="feature-remote" id="feature-people">
-          <div class="feature-remote-head">
-            <h3>Who &amp; why <span class="feature-remote-count">05–08</span></h3>
-            <p class="feature-remote-note">Your HRIS records who left; it does not tell you who is next, or why.</p>
-          </div>
-          <ol class="feature-grid">
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">05</span>
-              <h4>Retention Risk</h4>
-              <p>A scored list with the factors that moved, checked against who actually left, and honest when it is no better than chance.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">06</span>
-              <h4>Critical Roles &amp; Top Talent</h4>
-              <p>The people and roles whose loss would actually hurt, flagged.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">07</span>
-              <h4>Watch Register</h4>
-              <p>The living list of the people already on your radar — with reasons and owners.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">08</span>
-              <h4>Leaver Management &amp; Exit Surveys</h4>
-              <p>Why people left, joined to the leaver — not an anecdote.</p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="feature-remote" id="feature-trust">
-          <div class="feature-remote-head">
-            <h3>Trust the number <span class="feature-remote-count">09–12</span></h3>
-            <p class="feature-remote-note">Your HRIS keeps the data; it does not give you a figure you can defend in writing.</p>
-          </div>
-          <ol class="feature-grid">
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">09</span>
-              <h4>Data Dictionary &amp; Field Reference</h4>
-              <p>Every number's definition and source, in writing, for Finance and audit.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">10</span>
-              <h4>Data Health</h4>
-              <p>A quality score with the exact rows that need fixing.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">11</span>
-              <h4>Schema Drift Register</h4>
-              <p>Tells you when your vendor renamed a column — before the report silently breaks.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">12</span>
-              <h4>Reconciliation &amp; FTE Governance</h4>
-              <p>HR and Finance finally agree on the same total.</p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="feature-remote" id="feature-board">
-          <div class="feature-remote-head">
-            <h3>Board-ready <span class="feature-remote-count">13–16</span></h3>
-            <p class="feature-remote-note">Your HRIS exports data; it does not export the deck.</p>
-          </div>
-          <ol class="feature-grid">
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">13</span>
-              <h4>Executive pack chain</h4>
-              <p>Executive Pack, Presentation Deck, A3 and Intelligence Brief — generated from one set of numbers.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">14</span>
-              <h4>Power BI export with provenance</h4>
-              <p>Every measure carries its source fields; Finance reconciles without re-checking.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">15</span>
-              <h4>Statutory Returns</h4>
-              <p>The gender pay gap computed once, correctly — no re-keying.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">16</span>
-              <h4>KPI Dashboard</h4>
-              <p>Each KPI linked to its formula, so “agreed” means the same thing to everyone.</p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="feature-remote" id="feature-control">
-          <div class="feature-remote-head">
-            <h3>Your rules <span class="feature-remote-count">17–20</span></h3>
-            <p class="feature-remote-note">Your HRIS ships with vendor defaults; you should decide what “red” means.</p>
-          </div>
-          <ol class="feature-grid">
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">17</span>
-              <h4>Client Setup</h4>
-              <p>Your thresholds, your scoring weights — not the vendor's defaults.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">18</span>
-              <h4>Data Matrix</h4>
-              <p>Guided historic load with honest gaps, not silent blanks.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">19</span>
-              <h4>ROI Calculator</h4>
-              <p>What inaction is costing you, modelled from your own data.</p>
-            </li>
-            <li class="feature-card">
-              <span class="feature-index" aria-hidden="true">20</span>
-              <h4>Survey Desk</h4>
-              <p>Who is due a 90-day new-starter survey or an exit survey, with the send list and the questionnaire. You send from your own tools; nothing leaves your browser.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- == FOUR-YEAR STORY (owner approved 2 Nov 2026) ====================================== -->
-    <section class="section section-story" id="story" aria-labelledby="story-title">
-      <div class="wrap powerbi-grid">
-        <div class="powerbi-copy">
-          <p class="eyebrow">The story over time</p>
-          <h2 id="story-title">Tell the story of your last four years.</h2>
-          <p class="section-lede">
-            Load up to four years of your own history and read it in chapters, for the whole
-            organisation or any division or department. This year against last. Each measure
-            against your targets in red, amber and green. Diversity and Women in Finance Charter
-            progress as a journey. Where this month sits in your own history. What came before
-            people left.
-          </p>
-
-          <ul class="check-list">
-            <li><span class="tick" aria-hidden="true"></span>Any division or department, with only the figures stored for that group — what is not stored is not narrated</li>
-            <li><span class="tick" aria-hidden="true"></span>Every measure against your own targets, red, amber or green</li>
-            <li><span class="tick" aria-hidden="true"></span>Pockets, and what came before people left — with the base rate, and &ldquo;too few to say&rdquo; when that is the honest answer</li>
-          </ul>
-
-          <p><a class="btn btn-primary" href="#contact">Book a walkthrough of the four-year story</a></p>
-        </div>
-
-        <figure class="dgm dgm-story">
-          <img src="assets/screens/company-story.jpg" width="1200" height="662" loading="lazy" decoding="async" alt="The Company Story screen, What changed this year: the latest twelve months against the twelve before for headcount, absence, leavers, training and the diversity measures, each rated red, amber or green against its target.">
-          <figcaption>What changed this year, from the product on synthetic Meridian Bank data: every figure against the year before, and against your own targets.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- == SURVEYS (owner approved 2 Nov 2026) ============================================== -->
-    <section class="section section-surveys" id="surveys" aria-labelledby="surveys-title">
-      <div class="wrap powerbi-grid">
-        <div class="powerbi-copy">
-          <p class="eyebrow">Surveys that close the loop</p>
-          <h2 id="surveys-title">Know who is due a survey, and what they said.</h2>
-          <p class="section-lede">
-            Most HR teams run new-starter and exit surveys by hand and never connect the answers
-            to the people data. HR Intelligence works out who is due from the dates already in
-            your headcount file, writes the send list and the questionnaire, and keeps everything
-            inside your own estate.
-          </p>
-
-          <ul class="check-list">
-            <li><span class="tick" aria-hidden="true"></span><strong>Built:</strong> a 90-day new-starter survey list (recruitment, onboarding, learning, introduction to the role, manager and team) and an exit survey list, due as soon as a leave date is known</li>
-            <li><span class="tick" aria-hidden="true"></span><strong>Built:</strong> a mail-merge send list with the email already written, and the questionnaire for your own forms tool — you send from your own mail; nothing leaves your browser</li>
-            <li><span class="tick" aria-hidden="true"></span><strong>Built:</strong> load the answers file in your browser and read the response rate, themes and recommend score by department and division, in groups of ten or more only; a person&rsquo;s own words are never kept or shown</li>
-          </ul>
-
-          <p class="section-note">Confidential, not anonymous: because each person is sent their own survey, you will know who answered. The email says only what is true.</p>
-        </div>
-
-        <figure class="dgm dgm-loop">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 630" role="img" aria-labelledby="sv-title sv-desc" class="sv">
-  <title id="sv-title">The survey loop, from a trigger to a linked report, inside your own systems</title>
-  <desc id="sv-desc">Step 1: a new starter triggers a 90-day satisfaction survey covering recruitment, onboarding, learning and introduction to the role; a future leave date triggers an exit survey. Step 2: HR Intelligence lists who is due. Step 3: it produces the send list and the questionnaire. Step 4: you send them from your own mail or forms tool. Step 5: responses come back as a file. Step 6: HR Intelligence collates and reports them in the model, joined to the lifecycle data. Nothing leaves your organisation's own systems.</desc>
-  <defs>
-    <style>
-      .sv{font-family:var(--font-base,Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif)}
-      .sv .h{font-size:15px;font-weight:700;fill:var(--c-text,#e8eef7)}
-      .sv .s{font-size:13px;fill:var(--c-text-2,#a9b6c9)}
-      .sv .m{font-size:13px;font-weight:700;letter-spacing:.04em;fill:var(--c-text-3,#7c8aa0)}
-      .sv .k{font-size:12px;font-weight:700;letter-spacing:.05em;fill:var(--c-amber,#f5b942)}
-      .sv .card{fill:var(--c-surface,#111c31);stroke:var(--c-line-strong,rgba(148,163,184,.28));stroke-width:1.2}
-      .sv .core{fill:var(--c-accent-dim,rgba(45,212,191,.10));stroke:var(--c-accent,#2dd4bf);stroke-width:1.6}
-      .sv .euc{fill:var(--c-surface,#111c31);stroke:var(--c-amber,#f5b942);stroke-width:1.4;stroke-dasharray:5 4}
-      .sv .ln{fill:none;stroke:var(--c-accent-line,rgba(45,212,191,.55));stroke-width:1.5}
-      .sv .bound{fill:none;stroke:var(--c-text-3,#7c8aa0);stroke-width:1.3;stroke-dasharray:3 4}
-      .sv .ic{fill:none;stroke:var(--c-amber,#f5b942);stroke-width:1.2}
-      .sv .acc{fill:var(--c-accent,#2dd4bf)}
-      .sv .amb{fill:var(--c-amber,#f5b942)}
-      .sv .nt{font-size:13px;font-weight:800;fill:var(--c-on-accent,#04211d)}
-    </style>
-    <marker id="sv-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9z" class="acc"/></marker>
-    <symbol id="sv-grid" viewBox="0 0 18 14"><rect x="1" y="1" width="16" height="12" rx="1.5" style="fill:none;stroke:var(--c-amber,#f5b942);stroke-width:1.2"/><path d="M1 5h16M1 9h16M7 1v12M12 1v12" style="fill:none;stroke:var(--c-amber,#f5b942);stroke-width:1.2"/></symbol>
-  </defs>
-
-  <rect x="4" y="4" width="432" height="622" rx="18" class="bound"/>
-  <text x="220" y="28" text-anchor="middle" class="m">YOUR ORGANISATION: NOTHING LEAVES IT</text>
-
-  <g class="ln" marker-end="url(#sv-arr)">
-    <path d="M107 134V158"/>
-    <path d="M333 134V158"/>
-    <path d="M107 224V258"/>
-    <path d="M202 306H234"/>
-    <path d="M333 352V380"/>
-    <path d="M333 442V480"/>
-  </g>
-
-  <!-- 1a -->
-  <rect x="12" y="44" width="190" height="90" rx="12" class="card"/>
-  <text x="26" y="68" class="h">New starter</text>
-  <text x="26" y="88" class="s">90-day satisfaction survey:</text>
-  <text x="26" y="105" class="s">recruitment, onboarding,</text>
-  <text x="26" y="122" class="s">learning, role introduction</text>
-  <circle cx="182" cy="64" r="13" class="acc"/><text x="182" y="69" text-anchor="middle" class="nt">1a</text>
-
-  <!-- 1b -->
-  <rect x="238" y="44" width="190" height="90" rx="12" class="card"/>
-  <text x="252" y="68" class="h">Future leave date</text>
-  <text x="252" y="88" class="s">Exit survey, sent</text>
-  <text x="252" y="105" class="s">before the last day</text>
-  <circle cx="408" cy="64" r="13" class="acc"/><text x="408" y="69" text-anchor="middle" class="nt">1b</text>
-
-  <!-- 2 -->
-  <rect x="12" y="160" width="416" height="64" rx="12" class="core"/>
-  <circle cx="34" cy="192" r="13" class="acc"/><text x="34" y="197" text-anchor="middle" class="nt">2</text>
-  <text x="58" y="188" class="h">HR Intelligence lists who is due</text>
-  <text x="58" y="208" class="s">from starter dates and leave dates</text>
-
-  <!-- 3 -->
-  <rect x="12" y="260" width="190" height="92" rx="12" class="core"/>
-  <circle cx="34" cy="282" r="13" class="acc"/><text x="34" y="287" text-anchor="middle" class="nt">3</text>
-  <text x="58" y="287" class="h">Send list</text>
-  <text x="26" y="312" class="s">and the questionnaire,</text>
-  <text x="26" y="330" class="s">ready in the app</text>
-
-  <!-- 4 -->
-  <rect x="238" y="260" width="190" height="92" rx="6" class="euc"/>
-  <circle cx="260" cy="282" r="13" class="amb"/><text x="260" y="287" text-anchor="middle" class="nt">4</text>
-  <text x="284" y="287" class="h">You send them</text>
-  <text x="252" y="312" class="s">from your own mail</text>
-  <text x="252" y="329" class="s">or forms tool</text>
-  <text x="252" y="346" class="k">YOUR SYSTEM</text>
-
-  <!-- 5 -->
-  <rect x="238" y="382" width="190" height="60" rx="6" class="euc"/>
-  <circle cx="260" cy="402" r="13" class="amb"/><text x="260" y="407" text-anchor="middle" class="nt">5</text>
-  <use href="#sv-grid" x="284" y="395" width="18" height="14"/>
-  <text x="308" y="407" class="h">Responses</text>
-  <text x="252" y="430" class="s">come back as a file</text>
-
-  <!-- note -->
-  <text x="26" y="394" class="s">HR Intelligence never</text>
-  <text x="26" y="412" class="s">sends a survey and never</text>
-  <text x="26" y="430" class="s">sees your mail system.</text>
-
-  <!-- 6 -->
-  <rect x="12" y="482" width="416" height="92" rx="12" class="core"/>
-  <circle cx="34" cy="508" r="13" class="acc"/><text x="34" y="513" text-anchor="middle" class="nt">6</text>
-  <text x="58" y="513" class="h">Collated and reported (coming)</text>
-  <text x="26" y="540" class="s">in the model, joined to the lifecycle</text>
-  <text x="26" y="558" class="s">data: hiring, onboarding, learning</text>
-
-  <text x="220" y="604" text-anchor="middle" class="s">Your files, your tools. Nothing uploaded.</text>
-</svg>
-          <figcaption>A new starter or a future leave date puts someone on the list. You send the survey from your own tools, the answers come back as a file, and they are reported next to the rest of the lifecycle data.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ── DEMO ─────────────────────────────────────────────────────────────── -->
-    <section class="section section-demo" id="demo" aria-labelledby="demo-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">The four-minute walkthrough</p>
-          <h2 id="demo-title">See what your data would tell you — if you had time to find it.</h2>
-          <p class="section-lede">
-            The demo follows an HR Director through a realistic month-end: upload, signal
-            review, board export, trust statement. Synthetic data only — the narrative is real.
-          </p>
-        </div>
-
-        <!-- The player is configuration-driven: set SITE.demoVideo in js/site.js to
-             the embed URL. Until then it shows an honest "in production" panel
-             rather than a broken frame. -->
-        <div class="player" id="player" data-state="idle">
-          <div class="player-stage">
-            <div class="player-poster" aria-hidden="true">
-              <div class="poster-grid"></div>
-              <div class="poster-steps">
-                <span class="poster-step"><i class="poster-dot"></i>Upload</span>
-                <span class="poster-step"><i class="poster-dot"></i>Signal</span>
-                <span class="poster-step"><i class="poster-dot"></i>Review</span>
-                <span class="poster-step"><i class="poster-dot"></i>Export</span>
-              </div>
-            </div>
-
-            <button class="player-play" id="player-play" type="button" aria-describedby="player-note">
-              <span class="play-ring" aria-hidden="true">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
-              </span>
-              <span class="play-label">Watch the demo</span>
-            </button>
-
-            <div class="player-tags">
-              <span class="tag">Synthetic data</span>
-              <span class="tag tag-quiet">4&nbsp;min&nbsp;40&nbsp;s</span>
-            </div>
-          </div>
-
-          <div class="player-fallback" id="player-fallback" hidden>
-            <p class="player-fallback-title">The recorded walkthrough is in production.</p>
-            <p class="player-fallback-body">
-              The run-through is being filmed now. In the meantime we will walk your own month-end
-              exports through the engine live, on a call, using anonymised extracts.
-            </p>
-            <a class="btn btn-primary btn-sm" href="#contact">Request a live walkthrough</a>
-          </div>
-        </div>
-        <p class="visually-hidden" id="player-note">The demo runs four minutes and forty seconds and uses synthetic data only.</p>
-
-        <ul class="demo-anchors">
-          <li><span class="tick" aria-hidden="true"></span><strong>Upload in minutes</strong><span>Your existing exports, your existing columns.</span></li>
-          <li><span class="tick" aria-hidden="true"></span><strong>Signals, not dashboards</strong><span>What changed, where to act, and why it matters.</span></li>
-          <li><span class="tick" aria-hidden="true"></span><strong>Power BI export with provenance</strong><span>Finance can reconcile without a parallel spreadsheet.</span></li>
-        </ul>
-
-        <p class="demo-caption">Engine surfaces the signal. HR investigates.</p>
-      </div>
-    </section>
-
-    <!-- ── SIX AREAS ────────────────────────────────────────────────────────── -->
-    <section class="section section-areas" id="areas" aria-labelledby="areas-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">The product</p>
-          <h2 id="areas-title">Six areas. One engine. Built for regulated HR.</h2>
-          <p class="section-lede">
-            HR Intelligence is organised around the six navigation areas HR leaders actually
-            use — not a flat list of fifty reports. Each area draws from the same uploaded
-            files and the same calculation integrity rules.
-          </p>
-        </div>
-
-        <ol class="area-grid">
-          <li class="area-card">
-            <span class="area-index" aria-hidden="true">01</span>
-            <h3>HR Reports</h3>
-            <p>Executive Pulse, attrition, absence, FTE governance, pay equity, learning compliance, recruitment, and board-ready packs.</p>
-          </li>
-          <li class="area-card">
-            <span class="area-index" aria-hidden="true">02</span>
-            <h3>Insights</h3>
-            <p>Watch Register, retention risk, org view, critical roles, onboarding intelligence, exit surveys.</p>
-          </li>
-          <li class="area-card">
-            <span class="area-index" aria-hidden="true">03</span>
-            <h3>Risk &amp; Governance</h3>
-            <p>Employee relations, performance, management risk, culture and diversity, data health.</p>
-          </li>
-          <li class="area-card">
-            <span class="area-index" aria-hidden="true">04</span>
-            <h3>ROI Calculator</h3>
-            <p>Honest cost-of-inaction modelling from your uploaded data — no fabricated benchmarks.</p>
-          </li>
-          <li class="area-card">
-            <span class="area-index" aria-hidden="true">05</span>
-            <h3>Data Matrix</h3>
-            <p>Guided historic load, file-by-file validation, honest gaps when files are missing.</p>
-          </li>
-          <li class="area-card">
-            <span class="area-index" aria-hidden="true">06</span>
-            <h3>Client Setup</h3>
-            <p>Organisation structure, thresholds, and scoring weights you control — not hardcoded defaults.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ── POWER BI BRIDGE ──────────────────────────────────────────────────── -->
-    <section class="section section-powerbi" id="powerbi" aria-labelledby="powerbi-title">
-      <div class="wrap powerbi-grid">
-        <div class="powerbi-copy">
-          <p class="eyebrow">The Power BI bridge</p>
-          <h2 id="powerbi-title">Your board already trusts Power BI. Give them the right numbers.</h2>
-          <p class="section-lede">
-            HR Intelligence exports a board-ready Power BI dataset — your board sees the right
-            numbers in the tool they already trust. Full field mapping and provenance travel
-            with the export so Finance and HR can reconcile without a parallel spreadsheet.
-          </p>
-
-          <ul class="check-list">
-            <li><span class="tick" aria-hidden="true"></span>Export is optional — the engine works standalone</li>
-            <li><span class="tick" aria-hidden="true"></span>Column names and grain documented in the Data Dictionary</li>
-            <li><span class="tick" aria-hidden="true"></span>No duplicate MI maintenance</li>
-          </ul>
-        </div>
-
-        <div class="powerbi-visual" role="img" aria-label="A measure in Power BI carries its source fields, so the number can be traced back to the export you uploaded.">
-          <div class="trace-card">
-            <p class="trace-label">Measure</p>
-            <p class="trace-value">Voluntary attrition · rolling 12 months</p>
-
-            <div class="trace-flow" aria-hidden="true"><span></span></div>
-
-            <p class="trace-label">Source fields</p>
-            <ul class="trace-fields">
-              <li><span class="mono">LEAVE_REASON</span><span class="trace-tag">Leavers</span></li>
-              <li><span class="mono">LEAVE_DATE</span><span class="trace-tag">Leavers</span></li>
-              <li><span class="mono">DEPARTMENT</span><span class="trace-tag">Headcount</span></li>
-              <li><span class="mono">PERIOD</span><span class="trace-tag">Headcount</span></li>
-            </ul>
-
-            <p class="trace-foot">Traces back to the file you uploaded — not to a number we typed in.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ── TRUST ────────────────────────────────────────────────────────────── -->
     <!-- == SERVICES (from the founder's CV, owner approved direction 3 Nov 2026) ========= -->
     <section class="section section-services" id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Work with the person who built it</p>
-          <h2 id="services-title">The software is half of it. The experience is the other half.</h2>
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Six ways to work with the person who built it.</h2>
           <p class="section-lede">
-            Help Studios is led by someone who has spent almost twenty years doing this work
-            inside regulated financial services: moving HR data between systems, reconciling it
-            with Finance, and turning it into reporting a board will rely on. You can work with
-            that experience directly, with or without the software.
+            Help Studios is led by Peter Roberts, almost twenty years in HR data and MI inside
+            regulated financial services: HRIS migrations, data transformation, FTE and
+            governance models, HR and Finance reporting that has to agree, and recruitment,
+            diversity and absence reporting for boards and regulators. Each of these can be
+            bought on its own, with or without the software.
           </p>
         </div>
 
-        <ol class="area-grid">
-          <li class="area-card">
+        <ol class="area-grid service-grid">
+          <li class="area-card service-card service-flagship">
             <span class="area-index" aria-hidden="true">01</span>
-            <h3>HRIS migration assurance</h3>
-            <p>Scoping before you sign, data cleansing and reconciliation before go-live, and the reporting rebuilt afterwards. The failure points in an HR migration are very often the data, not the system.</p>
+            <h3>The Joined-Up Review</h3>
+            <p class="service-for">For a board or HR director who has good reports and no connections between them.</p>
+            <p>Absence, attrition, employee relations, recruitment, learning and survey results read together, by team and by manager. It shows what no single report can: where low absence is really under-reporting, where a team that people keep trying to leave also has the odd warning pattern, where a good-looking number hides a pocket.</p>
+            <p class="service-get"><strong>You get:</strong> a board paper in plain words, the evidence behind every finding, and a short list of what to look at first. <strong>Typically:</strong> two to three weeks.</p>
           </li>
-          <li class="area-card">
+          <li class="area-card service-card">
             <span class="area-index" aria-hidden="true">02</span>
-            <h3>HR data transformation</h3>
-            <p>Legacy, spreadsheet and multi-system HR data mapped onto one clean model: consistent employee identifiers, agreed definitions, one source of truth.</p>
+            <h3>HR Data Health Check</h3>
+            <p class="service-for">For anyone about to rely on HR data they have never audited.</p>
+            <p>Your exports read, mapped to one model and audited: duplicates, ids that do not join, definitions that differ between files, months that are missing, and every figure traced back to the file it came from.</p>
+            <p class="service-get"><strong>You get:</strong> an issues list ranked by effect, agreed definitions and a clean model. <strong>Typically:</strong> one to two weeks, fixed scope.</p>
           </li>
-          <li class="area-card">
+          <li class="area-card service-card">
             <span class="area-index" aria-hidden="true">03</span>
-            <h3>Power BI for HR</h3>
-            <p>Reporting built on a modelled star schema, with provenance back to the source files, delivered as a Power BI project your own team can own and extend.</p>
+            <h3>HRIS migration data assurance</h3>
+            <p class="service-for">For a programme moving HR data between systems.</p>
+            <p>Scoping before you sign, mapping and cleansing, mock-load reconciliation, cutover checks, and the reporting rebuilt afterwards. In my experience the failure points of an HR migration are very often the data, not the system.</p>
+            <p class="service-get"><strong>You get:</strong> a data workstream lead who has done this before, with the software to take weeks out of the cleansing and reconciliation. <strong>Engagement:</strong> contract or fixed workstream.</p>
           </li>
-          <li class="area-card">
+          <li class="area-card service-card">
             <span class="area-index" aria-hidden="true">04</span>
-            <h3>Finance and HR reconciliation</h3>
-            <p>Headcount, FTE and payroll that agree, with every difference explained, so the board sees one number and knows where it came from.</p>
+            <h3>One version of the truth: HR and Finance</h3>
+            <p class="service-for">For two divisions that use the same people data in different ways.</p>
+            <p>Headcount, FTE, establishment and payroll agreed between HR and Finance, with every difference explained and an FTE governance model both sides will accept, so the board sees one number.</p>
+            <p class="service-get"><strong>You get:</strong> an agreed definition set, a reconciliation that foots, and a monthly routine. <strong>Typically:</strong> project, then a light retainer.</p>
           </li>
-          <li class="area-card">
+          <li class="area-card service-card">
             <span class="area-index" aria-hidden="true">05</span>
-            <h3>Regulated reporting</h3>
-            <p>Women in Finance Charter, conduct and training compliance, and GDPR-minded data models built to stand up to scrutiny.</p>
+            <h3>Reporting, regulation and Power BI</h3>
+            <p class="service-for">For teams that owe the board, the regulator or the Finance Charter a number.</p>
+            <p>Recruitment and diversity MI, absence deep dives, employee relations reporting, Women in Finance Charter and other regulatory returns, built as Power BI projects your own team can own, with the trail back to the source.</p>
+            <p class="service-get"><strong>You get:</strong> reports you can defend and a model you can extend. <strong>Engagement:</strong> project or interim cover.</p>
           </li>
-          <li class="area-card">
+          <li class="area-card service-card">
             <span class="area-index" aria-hidden="true">06</span>
-            <h3>Run it with you</h3>
-            <p>Putting HR Intelligence on your data: mapping, targets, a month-end routine and handover. Or interim people-analytics cover while you recruit.</p>
+            <h3>Corporate change and transactions</h3>
+            <p class="service-for">For an organisation being sold, bought or merged.</p>
+            <p>HR data prepared for due diligence and data rooms, two organisations&rsquo; definitions reconciled into one set of reporting, and day-one reporting that holds up. Experience of UK financial-services transactions.</p>
+            <p class="service-get"><strong>You get:</strong> a controlled, documented data position under time pressure. <strong>Engagement:</strong> contract.</p>
           </li>
         </ol>
 
-        <p class="section-note">Fixed-scope assessments, project work or contract cover. Conversation first &mdash; no pricing on this site.</p>
+        <p class="section-note"><strong>Ongoing:</strong> a monthly MI service on your data with a short written read-out, or interim people-analytics cover while you recruit. Conversation first, fixed scope where possible, no prices on this site.</p>
         <p><a class="btn btn-primary" href="#contact">Talk about a project</a></p>
       </div>
     </section>
@@ -1395,7 +922,7 @@
     <section class="section section-trust" id="trust" aria-labelledby="trust-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Trust signals</p>
+          <p class="eyebrow">About</p>
           <h2 id="trust-title">Built for regulated environments. Designed for scrutiny.</h2>
           <p class="section-lede">
             Help Studios is led by Peter Roberts — twenty years in regulated financial services
@@ -1425,12 +952,8 @@
         </div>
 
         <div class="founder">
-          <p class="founder-quote">
-            “The first question the Risk Committee asks is where the data went. It is the right
-            question, and the product should be built so the answer is short.”
-          </p>
           <p class="founder-attrib">
-            <strong>Peter Roberts</strong> — founder, Help Studios Ltd
+            <strong>Peter Roberts</strong>, founder, Help Studios Ltd. Almost twenty years in HR data and MI in UK regulated financial services: HRIS migrations, data transformation, FTE and governance models, HR and Finance reporting that has to agree, and recruitment, diversity and absence reporting for boards and regulators.
           </p>
         </div>
       </div>
@@ -1477,7 +1000,7 @@
           </div>
           <div class="cf-actions">
             <button class="btn btn-primary" type="submit">Prepare my message</button>
-            <a class="link-arrow" href="#demo">Or watch the demo first<span aria-hidden="true"> →</span></a>
+            
           </div>
           <p class="cf-note" id="cf-status" role="status" aria-live="polite">This opens a draft in your own email program, addressed to Help Studios. Nothing is sent until you press send, and nothing is collected by this site.</p>
         </form>
@@ -1500,35 +1023,31 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div class="footer-brand">
-        <img class="brand-mark" src="assets/logo/help/help-mark-on-dark.png" alt="" width="400" height="240">
         <span class="brand-name">Help Studios</span>
         <span class="brand-product">HR Intelligence</span>
       </div>
 
       <nav class="footer-nav" aria-label="Site">
         <div class="footer-nav-group">
-          <h2 class="footer-nav-label">Start</h2>
+          <h2 class="footer-nav-label">The model</h2>
           <ul>
-            <li><a href="#frustrations">The problem</a></li>
-            <li><a href="#product">The product</a></li>
-            <li><a href="#try">Try the profiler</a></li>
+            <li><a href="#satnav">Where you are heading</a></li>
+            <li><a href="#pipeline">Data to reports</a></li>
+            <li><a href="#tour">Tour</a></li>
           </ul>
         </div>
         <div class="footer-nav-group">
           <h2 class="footer-nav-label">Proof</h2>
           <ul>
-            <li><a href="#how">How it works</a></li>
-            <li><a href="#features">What you get</a></li>
-            <li><a href="#areas">The six areas</a></li>
-            <li><a href="#powerbi">Power BI</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#how">How it reads files</a></li>
+            <li><a href="#try">Try the profiler</a></li>
+            <li><a href="#trust">About</a></li>
           </ul>
         </div>
         <div class="footer-nav-group">
           <h2 class="footer-nav-label">Next step</h2>
           <ul>
-            <li><a href="#demo">Watch the demo</a></li>
-            <li><a href="#trust">Trust</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
