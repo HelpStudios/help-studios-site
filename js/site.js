@@ -706,3 +706,54 @@ var SITE = {
     status.textContent = 'A draft has opened in your email program. If nothing opened, your browser has no email program set up.';
   });
 })();
+
+/* Guided tour: tabs, back and next, arrow keys, and callout pins that highlight their note. Without JS every step is shown in turn. */
+(function () {
+  var root = document.getElementById('tour-app');
+  if (!root) return;
+  var tabs = Array.prototype.slice.call(root.querySelectorAll('.tour-tab'));
+  var panels = Array.prototype.slice.call(root.querySelectorAll('.tour-panel'));
+  var prev = document.getElementById('tour-prev');
+  var next = document.getElementById('tour-next');
+  if (!tabs.length || tabs.length !== panels.length) return;
+  root.classList.add('tour-js');
+  var at = 0;
+
+  function show(i, focusTab) {
+    at = Math.max(0, Math.min(tabs.length - 1, i));
+    tabs.forEach(function (t, k) { t.setAttribute('aria-selected', k === at ? 'true' : 'false'); t.setAttribute('tabindex', k === at ? '0' : '-1'); });
+    panels.forEach(function (p, k) { p.hidden = k !== at; });
+    if (prev) prev.disabled = at === 0;
+    if (next) { next.disabled = at === tabs.length - 1; next.textContent = at === tabs.length - 2 ? 'Last step' : 'Next step'; }
+    if (focusTab) tabs[at].focus();
+  }
+
+  function light(panel, n, on) {
+    Array.prototype.forEach.call(panel.querySelectorAll('[data-pin="' + n + '"]'), function (el) { el.classList.toggle('is-on', on); });
+  }
+
+  tabs.forEach(function (t, k) {
+    t.addEventListener('click', function () { show(k, false); });
+    t.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(at + 1, true); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); show(at - 1, true); }
+      else if (e.key === 'Home') { e.preventDefault(); show(0, true); }
+      else if (e.key === 'End') { e.preventDefault(); show(tabs.length - 1, true); }
+    });
+  });
+  if (prev) prev.addEventListener('click', function () { show(at - 1, false); });
+  if (next) next.addEventListener('click', function () { show(at + 1, false); });
+  panels.forEach(function (p) {
+    Array.prototype.forEach.call(p.querySelectorAll('.tour-pin'), function (pin) {
+      var n = pin.getAttribute('data-pin');
+      ['mouseenter', 'focus'].forEach(function (ev) { pin.addEventListener(ev, function () { light(p, n, true); }); });
+      ['mouseleave', 'blur'].forEach(function (ev) { pin.addEventListener(ev, function () { light(p, n, false); }); });
+    });
+    Array.prototype.forEach.call(p.querySelectorAll('.tour-notes li'), function (li) {
+      var n = li.getAttribute('data-pin');
+      li.addEventListener('mouseenter', function () { light(p, n, true); });
+      li.addEventListener('mouseleave', function () { light(p, n, false); });
+    });
+  });
+  show(0, false);
+})();

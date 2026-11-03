@@ -85,10 +85,11 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="#frustrations">The problem</a>
         <a href="#product">The product</a>
+        <a href="#tour">Tour</a>
         <a href="#how">How it works</a>
         <a href="#try">Try it</a>
-        <a href="#areas">Six areas</a>
         <a href="#powerbi">Power BI</a>
+        <a href="#services">Services</a>
         <a href="#trust">Trust</a>
         <a class="btn btn-primary btn-sm nav-cta" href="#demo">Watch the demo</a>
       </nav>
@@ -296,6 +297,103 @@
          JavaScript off the section still reads as Workday mapped into the model
          — the harness checks that the static rows and the generated Workday rows
          agree, chip for chip. -->
+    <!-- == GUIDED TOUR (owner approved 3 Nov 2026): real screens, no engine code on the site ======= -->
+    <section class="section section-tour" id="tour" aria-labelledby="tour-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Guided tour</p>
+          <h2 id="tour-title">See the answers. Five steps, nothing to install.</h2>
+          <p class="section-lede">
+            These are the real screens from the running product, on a synthetic bank called
+            Meridian Bank. Pick a step, or use the arrow keys. The tour shows the product;
+            it does not contain it &mdash; to see it on your own data, talk to us.
+          </p>
+        </div>
+
+        <div class="tour" id="tour-app">
+          <div class="tour-tabs" role="tablist" aria-label="Guided tour steps">
+            <button type="button" role="tab" class="tour-tab" id="tour-tab-headlines" aria-controls="tour-panel-headlines" aria-selected="true" tabindex="0"><span class="tour-tab-no">1</span>Start with the answer</button><button type="button" role="tab" class="tour-tab" id="tour-tab-compare" aria-controls="tour-panel-compare" aria-selected="false" tabindex="-1"><span class="tour-tab-no">2</span>Ask what changed</button><button type="button" role="tab" class="tour-tab" id="tour-tab-risk" aria-controls="tour-panel-risk" aria-selected="false" tabindex="-1"><span class="tour-tab-no">3</span>Find who is at risk</button><button type="button" role="tab" class="tour-tab" id="tour-tab-story" aria-controls="tour-panel-story" aria-selected="false" tabindex="-1"><span class="tour-tab-no">4</span>Tell the story over time</button><button type="button" role="tab" class="tour-tab" id="tour-tab-survey" aria-controls="tour-panel-survey" aria-selected="false" tabindex="-1"><span class="tour-tab-no">5</span>Hear from your people</button>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-headlines" aria-labelledby="tour-tab-headlines">
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/headlines-report.jpg" alt="The Headlines Report for Meridian Bank: 3,013 heads and 2,864.7 FTE, absence in red against target, attrition and training with their status, and a one-sentence summary." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:33%;top:76%" data-pin="1" aria-label="Callout 1: Heads and FTE, side by side">1</button><button type="button" class="tour-pin" style="left:96%;top:76%" data-pin="2" aria-label="Callout 2: Red, amber or green against your own target">2</button><button type="button" class="tour-pin" style="left:58%;top:66%" data-pin="3" aria-label="Callout 3: One sentence for the board">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 1 of 5</p>
+                <h3>Start with the answer</h3>
+                <p class="tour-q">What does the board need to know this month?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>Heads and FTE, side by side</strong> 3,013 people are 2,864.7 full-time equivalents: part-time working is counted, not rounded away, and last year sits underneath.</li><li data-pin="2"><strong>Red, amber or green against your own target</strong> The rate is judged against the target you set, not a number baked into the product, and it says so.</li><li data-pin="3"><strong>One sentence for the board</strong> The screen writes its own summary: what needs attention, what is on target, what is for information.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-compare" aria-labelledby="tour-tab-compare" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/compare.jpg" alt="The Compare screen: April 2026 against May 2026, 3,011 opening, 33 joined, 31 left, 3,013 closing, with a bridge that adds up." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:80%;top:45%" data-pin="1" aria-label="Callout 1: Plain words first">1</button><button type="button" class="tour-pin" style="left:56%;top:45%" data-pin="2" aria-label="Callout 2: Every figure is a link">2</button><button type="button" class="tour-pin" style="left:48%;top:89%" data-pin="3" aria-label="Callout 3: The bridge always adds up">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 2 of 5</p>
+                <h3>Ask what changed</h3>
+                <p class="tour-q">Who joined, who left, and does it add up?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>Plain words first</strong> Headcount went from 3,011 to 3,013: 33 joined and 31 left, and 242 people who stayed changed something.</li><li data-pin="2"><strong>Every figure is a link</strong> Click joined, left or changed and see the named people behind the number.</li><li data-pin="3"><strong>The bridge always adds up</strong> Opening plus joined minus left is closing. If it ever does not, the screen says so instead of hiding it.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-risk" aria-labelledby="tour-tab-risk" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/retention-risk.jpg" alt="The Retention Risk screen: attrition against an industry benchmark, risk bands from critical to low, and the high-potential people flagged as high risk." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:81%;top:52%" data-pin="1" aria-label="Callout 1: Risk bands, not a verdict">1</button><button type="button" class="tour-pin" style="left:40.5%;top:60.5%" data-pin="2" aria-label="Callout 2: Check it against history">2</button><button type="button" class="tour-pin" style="left:85%;top:74%" data-pin="3" aria-label="Callout 3: Your succession pipeline at risk">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 3 of 5</p>
+                <h3>Find who is at risk</h3>
+                <p class="tour-q">Who is likely to leave, and what could we do first?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>Risk bands, not a verdict</strong> Critical, high, medium and low counts from the factors that are present. The engine surfaces the signal; HR investigates.</li><li data-pin="2"><strong>Check it against history</strong> One click tests the model against people who have already left, so you can see whether it earns your trust.</li><li data-pin="3"><strong>Your succession pipeline at risk</strong> High-potential people who are also flagged as high risk: the ones to talk to before they resign.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-story" aria-labelledby="tour-tab-story" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/company-story.jpg" alt="The Company Story screen: the latest twelve months against the twelve before for headcount, absence, leavers, training and diversity measures, each with its status against target." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:81%;top:33%" data-pin="1" aria-label="Callout 1: The biggest movers, in words">1</button><button type="button" class="tour-pin" style="left:70%;top:44%" data-pin="2" aria-label="Callout 2: Rated against your targets">2</button><button type="button" class="tour-pin" style="left:24%;top:52%" data-pin="3" aria-label="Callout 3: Follow any line to the page behind it">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 4 of 5</p>
+                <h3>Tell the story over time</h3>
+                <p class="tour-q">What changed this year, and what came before people left?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>The biggest movers, in words</strong> Leavers down 8.2%, women in leadership up 2.7 points: the chapter opens with what moved most.</li><li data-pin="2"><strong>Rated against your targets</strong> Every measure that has a target is rated red, amber or green; the rest are shown without a verdict.</li><li data-pin="3"><strong>Follow any line to the page behind it</strong> The open links take you to the screen with the detail, with your filters kept.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-survey" aria-labelledby="tour-tab-survey" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/survey-answers.jpg" alt="The Survey Desk answers report for new starters: 80 answers, a recommend score, agreement by theme, a word picture of comments and a table by department." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:50%;top:24.5%" data-pin="1" aria-label="Callout 1: A score with its base">1</button><button type="button" class="tour-pin" style="left:80%;top:59%" data-pin="2" aria-label="Callout 2: Words, never comments">2</button><button type="button" class="tour-pin" style="left:50%;top:81%" data-pin="3" aria-label="Callout 3: Groups of ten or more">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 5 of 5</p>
+                <h3>Hear from your people</h3>
+                <p class="tour-q">What did the new starters say, and is it enough to trust?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>A score with its base</strong> The recommend score is shown with how many answers it comes from, and nothing is reported under ten answers.</li><li data-pin="2"><strong>Words, never comments</strong> A bigger, bolder word was used by more people. The comments themselves are not kept or shown.</li><li data-pin="3"><strong>Groups of ten or more</strong> A department is named only when ten people answered; smaller groups are folded together so none can be found by subtraction.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-nav">
+            <button type="button" class="btn btn-secondary" id="tour-prev">Back</button>
+            <button type="button" class="btn btn-primary" id="tour-next">Next step</button>
+            <a class="link-arrow" href="#contact" id="tour-cta">Want this on your own data?<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+        <p class="section-note">Demo data &mdash; Meridian Bank, a synthetic organisation. The numbers on every step come from one run of the product.</p>
+      </div>
+    </section>
+
     <section class="section section-how" id="how" aria-labelledby="how-title">
       <div class="wrap">
         <div class="section-head">
@@ -1240,6 +1338,58 @@
     </section>
 
     <!-- ── TRUST ────────────────────────────────────────────────────────────── -->
+    <!-- == SERVICES (from the founder's CV, owner approved direction 3 Nov 2026) ========= -->
+    <section class="section section-services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Work with the person who built it</p>
+          <h2 id="services-title">The software is half of it. The experience is the other half.</h2>
+          <p class="section-lede">
+            Help Studios is led by someone who has spent almost twenty years doing this work
+            inside regulated financial services: moving HR data between systems, reconciling it
+            with Finance, and turning it into reporting a board will rely on. You can work with
+            that experience directly, with or without the software.
+          </p>
+        </div>
+
+        <ol class="area-grid">
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">01</span>
+            <h3>HRIS migration assurance</h3>
+            <p>Scoping before you sign, data cleansing and reconciliation before go-live, and the reporting rebuilt afterwards. The failure points in an HR migration are very often the data, not the system.</p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">02</span>
+            <h3>HR data transformation</h3>
+            <p>Legacy, spreadsheet and multi-system HR data mapped onto one clean model: consistent employee identifiers, agreed definitions, one source of truth.</p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">03</span>
+            <h3>Power BI for HR</h3>
+            <p>Reporting built on a modelled star schema, with provenance back to the source files, delivered as a Power BI project your own team can own and extend.</p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">04</span>
+            <h3>Finance and HR reconciliation</h3>
+            <p>Headcount, FTE and payroll that agree, with every difference explained, so the board sees one number and knows where it came from.</p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">05</span>
+            <h3>Regulated reporting</h3>
+            <p>Women in Finance Charter, conduct and training compliance, and GDPR-minded data models built to stand up to scrutiny.</p>
+          </li>
+          <li class="area-card">
+            <span class="area-index" aria-hidden="true">06</span>
+            <h3>Run it with you</h3>
+            <p>Putting HR Intelligence on your data: mapping, targets, a month-end routine and handover. Or interim people-analytics cover while you recruit.</p>
+          </li>
+        </ol>
+
+        <p class="section-note">Fixed-scope assessments, project work or contract cover. Conversation first &mdash; no pricing on this site.</p>
+        <p><a class="btn btn-primary" href="#contact">Talk about a project</a></p>
+      </div>
+    </section>
+
     <section class="section section-trust" id="trust" aria-labelledby="trust-title">
       <div class="wrap">
         <div class="section-head">
@@ -1300,6 +1450,7 @@
             <select id="cf-type" name="type" required>
               <option value="Book a confidential walkthrough">Book a confidential walkthrough</option>
               <option value="A question about the product">A question about the product</option>
+              <option value="HRIS migration or data transformation project">HRIS migration or data transformation project</option>
               <option value="Data, security or privacy question">Data, security or privacy question</option>
               <option value="Power BI or reporting">Power BI or reporting</option>
               <option value="Partnership or reseller">Partnership or reseller</option>
@@ -1368,6 +1519,7 @@
             <li><a href="#features">What you get</a></li>
             <li><a href="#areas">The six areas</a></li>
             <li><a href="#powerbi">Power BI</a></li>
+            <li><a href="#services">Services</a></li>
           </ul>
         </div>
         <div class="footer-nav-group">
