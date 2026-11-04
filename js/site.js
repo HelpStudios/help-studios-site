@@ -67,6 +67,47 @@ var SITE = {
     });
   }
 
+  /* ── 2b. Header dropdown menus (HR lifecycle, The engine) ───────────────── */
+  var menuItems = Array.prototype.slice.call(document.querySelectorAll('.nav-has-menu'));
+  function closeMenus(except) {
+    menuItems.forEach(function (item) {
+      if (item === except) return;
+      item.classList.remove('is-open');
+      var b = item.querySelector('.nav-menu-toggle');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+  menuItems.forEach(function (item) {
+    var b = item.querySelector('.nav-menu-toggle');
+    if (!b) return;
+    b.addEventListener('click', function (event) {
+      event.stopPropagation();
+      var open = !item.classList.contains('is-open');
+      closeMenus(item);
+      item.classList.toggle('is-open', open);
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', function (event) { if (!event.target.closest('.nav-has-menu')) closeMenus(null); });
+  document.addEventListener('keydown', function (event) { if (event.key === 'Escape') closeMenus(null); });
+  document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { closeMenus(null); }); });
+
+  /* A link to a lifecycle stage opens that stage: the stages are <details>, closed until chosen. */
+  function openStageFromHash() {
+    var id = (location.hash || '').replace(/^#/, '');
+    if (!id || id.indexOf('lifecycle-') !== 0) return;
+    var el = document.getElementById(id);
+    if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', openStageFromHash);
+  document.querySelectorAll('a[href^="#lifecycle-"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el && el.tagName === 'DETAILS') el.open = true;
+    });
+  });
+  openStageFromHash();
+
   /* ── 3. Demo player ───────────────────────────────────────────────────── */
   var player = document.getElementById('player');
   var playButton = document.getElementById('player-play');
