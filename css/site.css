@@ -1,6 +1,6 @@
 /* ============================================================================
    Help Studios — marketing site
-   Design direction agreed with the brand owner (Aug 2026):
+   Design direction:
      typography  Apple's measured treatment — Inter 800, tracking -0.022em,
                  leading ~1.0 on display sizes
      colour      the product's measured palette — slate ground, teal signal, amber risk
@@ -2115,7 +2115,7 @@ body {
 .tour:not(.tour-js) .tour-tabs, .tour:not(.tour-js) .tour-nav button { display: none; }
 @media (max-width: 860px) { .tour-stage { grid-template-columns: 1fr; } .tour-pin { width: 24px; height: 24px; font-size: 0.75rem; } }
 
-/* ── From data to reports: the three-step story (owner, 3 Nov 2026) ───────── */
+/* ── From data to reports: the three-step story ───────── */
 .section-pipeline { background: var(--c-base-deep); }
 .pipe-story { list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; gap: 3rem; }
 .pipe-step { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2.5rem; align-items: center; }
@@ -2131,14 +2131,14 @@ body {
   .pipe-step { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
 }
 
-/* Services: named offers (owner, 3 Nov 2026) */
+/* Services: named offers */
 .service-card p { margin: 0 0 0.7rem; }
 .service-card .service-for { color: var(--c-accent); font-size: 0.875rem; font-weight: 500; }
 .service-card .service-get { color: var(--c-text-2); font-size: 0.9rem; }
 .service-card .service-get strong { color: var(--c-text); }
 .service-flagship { border-color: var(--c-accent-line); background: var(--c-accent-dim); }
 
-/* Where you are heading (owner, 3 Nov 2026) */
+/* Where you are heading */
 .section-satnav { background: var(--c-base); }
 .satnav-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .satnav-grid .area-card p { margin: 0 0 0.75rem; }
@@ -2230,3 +2230,12 @@ body {
 
 /* ── The engine band ────────────────────────────────────────────────────────────────────────── */
 .engine-visual { margin-top: 2rem; max-width: 980px; }
+
+/* Services: the three places most engagements start */
+.pillars { margin: 2.5rem 0 3rem; }
+.pillar-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 0; padding: 0; }
+.pillar { padding: 1.25rem 1.35rem; background: var(--c-surface); border: 1px solid var(--c-accent-line); border-radius: var(--r-md); }
+.pillar h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.pillar p { margin: 0; color: var(--c-text-2); font-size: 0.9375rem; }
+.pillar-note { margin: 1rem 0 0; color: var(--c-text-3); font-size: 0.875rem; }
+@media (max-width: 860px) { .pillar-grid { grid-template-columns: 1fr; } }
