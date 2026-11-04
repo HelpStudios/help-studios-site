@@ -2231,15 +2231,11 @@ body {
 /* ── The engine band ────────────────────────────────────────────────────────────────────────── */
 .engine-visual { margin-top: 2rem; max-width: 980px; }
 
-/* Services: the three places most engagements start */
-.pillars { margin: 2.5rem 0 3rem; }
-.pillar-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 0; padding: 0; }
-.pillar { padding: 1.25rem 1.35rem; background: var(--c-surface); border: 1px solid var(--c-accent-line); border-radius: var(--r-md); }
-.pillar h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
-.pillar p { margin: 0; color: var(--c-text-2); font-size: 0.9375rem; }
-.pillar-note { margin: 1rem 0 0; color: var(--c-text-3); font-size: 0.875rem; }
-@media (max-width: 860px) { .pillar-grid { grid-template-columns: 1fr; } }
 
 /* Pedigree line directly under the hero */
 .pedigree { border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line); background: var(--c-surface); }
 .pedigree p { margin: 0; padding: 1.1rem 0; color: var(--c-text-2); font-size: 0.9375rem; max-width: 80ch; }
+
+/* A link from the hero card lands on its own service card, clear of the fixed header, and marks it briefly */
+.service-card { scroll-margin-top: calc(var(--header-h) + 1rem); }
+.service-card:target { border-color: var(--c-accent); box-shadow: 0 0 0 1px var(--c-accent); }
