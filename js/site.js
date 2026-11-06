@@ -798,3 +798,63 @@ var SITE = {
   });
   show(0, false);
 })();
+
+/* ── 11. The 90-second demo: a dismissible full-screen video ──────────────────
+   The video is not requested until the dialog opens: the markup carries a
+   data-src and no src, so a demo that is not yet recorded cannot 404 on page
+   load. On open the src is copied in and playback starts; if the file is
+   missing, the dialog shows the honest "in production" note instead of a
+   broken player. Escape, the close button and the backdrop all dismiss it and
+   return focus to the thumbnail that opened it. */
+(function () {
+  'use strict';
+  var opener = document.getElementById('video-open');
+  var modal = document.getElementById('video-modal');
+  var closeBtn = document.getElementById('video-modal-close');
+  var video = document.getElementById('demo-video');
+  var fallback = document.getElementById('video-modal-fallback');
+  if (!opener || !modal) return;
+
+  function showFallback() {
+    if (fallback) fallback.hidden = false;
+    if (video) video.hidden = true;
+  }
+
+  function startVideo() {
+    if (!video) return;
+    var src = video.getAttribute('data-src');
+    if (!src) { showFallback(); return; }
+    if (video.getAttribute('src') !== src) video.setAttribute('src', src);
+    var attempt = video.play();
+    if (attempt && typeof attempt.catch === 'function') attempt.catch(function () { /* autoplay may be blocked; controls remain */ });
+  }
+
+  function openModal() {
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (fallback) fallback.hidden = true;
+    if (video) video.hidden = false;
+    startVideo();
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeModal() {
+    if (!modal.classList.contains('is-open')) return;
+    if (video) {
+      try { video.pause(); } catch (e) { /* nothing to pause */ }
+      video.removeAttribute('src');
+      try { video.load(); } catch (e) { /* reload without a source is harmless */ }
+    }
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    opener.focus();
+  }
+
+  opener.addEventListener('click', openModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (video) video.addEventListener('error', showFallback);
+  modal.addEventListener('click', function (event) { if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (event) { if (event.key === 'Escape') closeModal(); });
+})();
