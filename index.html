@@ -79,9 +79,21 @@
         <span class="visually-hidden">Menu</span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Talk to Peter</a>
+      <nav class='site-nav' id='site-nav' aria-label='Primary'>
+        <a href='#services'>Services</a>
+        <div class='nav-item nav-has-menu nav-engine'>
+          <button class='nav-menu-toggle' type='button' aria-expanded='false' aria-haspopup='true' aria-controls='menu-engine'>HR Intelligence engine <span class='nav-caret' aria-hidden='true'></span></button>
+          <div class='nav-menu' id='menu-engine'>
+            <ul class='nav-menu-list'>
+              <li><a class='nav-menu-feature' href='#engine'><strong>What it does</strong><span>An entire MI team, in one product</span></a></li>
+              <li><a href='#satnav'>Where you are heading</a></li>
+              <li><a href='screenshots.html'>Screenshots of MI</a></li>
+              <li><a href='powerbi.html'>Power BI compatibility</a></li>
+              <li><a href='glossary.html'>Glossary of metrics</a></li>
+            </ul>
+          </div>
+        </div>
+        <a class='btn btn-primary btn-sm nav-cta' href='#contact'>Talk to Peter</a>
       </nav>
     </div>
   </header>
@@ -119,7 +131,7 @@
             <p class="pipe-label">What I do</p>
             <ul class="offer-list">
               <li><a href="#service-migration"><strong>HRIS migration</strong><span>End-to-end data assurance and rebuilt reporting for Workday, Oracle, PeopleXD, ResourceLink and others</span></a></li>
-              <li><a href="#service-audit"><strong>HR and people data management</strong><span>Owning the data and the reporting: workforce planning, reporting and MI, governance and reconciliation</span></a></li>
+              <li><a href="#service-audit"><strong>HR and people data management</strong><span>Owning the data and the reporting: management information (MI), data governance, and reconciling HR with Finance</span></a></li>
               <li><a href="#service-joined-up"><strong>HR data transformation</strong><span>Turning raw exports into one agreed, board-ready position</span></a></li>
               <li><a href="#service-transactions"><strong>HR projects</strong><span>FTE governance for a resource committee, data rooms for sales and divestments, and year-end performance calibration and reward</span></a></li>
               <li><a href="#engine-intro"><strong>Consultancy</strong><span>Deep-dive analytics and joined-up insights using the HR Intelligence engine</span></a></li>
@@ -134,9 +146,9 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Track record</p>
-          <h2 id="track-title">Almost twenty years close to the executive table.</h2>
+          <h2 id="track-title">Almost twenty years in regulated financial services.</h2>
           <p class="section-lede">
-            I have spent nearly two decades in regulated financial services, producing the people insight that boards and executive teams rely on at MBNA, Bank of America, Lloyds Banking Group, The Co-operative Bank and Coventry Building Society.
+            I have spent nearly two decades in regulated financial services, producing the people insight that boards and executive teams rely on at MBNA, Bank of America, Lloyds Banking Group, The Co-operative Bank, and Coventry Building Society.
           </p>
           <p class="section-lede">
             My work bridges the gap between raw systems and executive decisions. I report independently across the HR lifecycle, partnered with the relevant HR managers who own those areas:
@@ -155,7 +167,7 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">The HR Intelligence engine</p>
-          <h2 id="engine-intro-title">Beyond reporting. Into insight.</h2>
+          <h2 id="engine-intro-title">Software built for the reality of HR data.</h2>
           <p class="section-lede">Know your data is right. Then act on it with confidence.</p>
           <p class="section-lede">
             To do this work faster and more accurately, I designed and built my own tool: the HR Intelligence engine. It is a browser-based, privacy-by-design analytics engine that I use to deliver my consultancy.
@@ -181,19 +193,23 @@
     <!-- == THE SILOS AND THE DIFFERENCE == -->
     <section class="section section-difference" id="difference" aria-labelledby="difference-title">
       <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Why joined-up matters</p>
-          <h2 id="difference-title">Bringing fragmented systems into one linked view.</h2>
-          <p class="section-lede">
-            The hardest part of HR data is that it lives in disconnected silos: headcount in a core HRIS, absence in a legacy system, and performance in a spreadsheet. The HR Intelligence engine absorbs any HRIS or spreadsheet system and joins those silos together around each person, showing connections that were not visible before.
-          </p>
-          <h3 class="section-subhead">Seeing cause and effect across the lifecycle</h3>
-          <p class="section-lede">
-            For example, we can test how absence patterns influence retention. Using synthetic test data, the engine can reveal if a specific department has a spike in Monday and Friday absences, and immediately cross-reference that against a rising attrition trend or a manager whose team is under strain.
-          </p>
-          <p class="section-note">
-            When we join the areas together, a healthy-looking average might reveal a pocket of risk, giving HR the exact signal of where to step in and have a conversation before people leave.
-          </p>
+        <div class="difference-grid">
+          <div class="difference-intro">
+            <p class="eyebrow">Why joined-up matters</p>
+            <h2 id="difference-title">Bringing fragmented systems into one linked view.</h2>
+            <p class="section-lede">
+              Your core headcount and absence data usually sit together in your main HRIS. But recruitment metrics, engagement surveys, and historical performance records often live in separate systems or spreadsheets. Even within a single platform, reporting across different modules can be rigid. The HR Intelligence engine absorbs your exports, whether they come from one system or several, and links them around the individual to surface connections that standard reports miss.
+            </p>
+          </div>
+          <div class="difference-cause">
+            <h3 class="section-subhead">Seeing cause and effect across the lifecycle</h3>
+            <p class="section-lede">
+              For example, we can test how absence patterns influence retention. Using synthetic test data, the engine can reveal if a specific department has a spike in Monday and Friday absences, and immediately cross-reference that against a rising attrition trend or a manager whose team is under strain.
+            </p>
+            <p class="section-note">
+              When we join the areas together, a healthy-looking average might reveal a pocket of risk, giving HR the exact signal of where to step in and have a conversation before people leave.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -205,7 +221,7 @@
           <p class="eyebrow">How it works</p>
           <h2 id="approach-title">Five things that make HR data credible.</h2>
           <p class="section-lede">
-            Credibility is earned one figure at a time. The work does five things, and the first is the one most organisations skip: until the data underneath has been checked, every report starts with another round of fixes.
+            Credibility is earned one figure at a time. My approach relies on five principles, and the first is the one most organisations skip: until the data underneath has been checked, every report starts with another round of fixes.
           </p>
         </div>
 
@@ -358,177 +374,87 @@
           <p class="eyebrow">HR lifecycle</p>
           <h2 id="lifecycle-title">From hire to exit: where I help, and what the HR Intelligence engine covers.</h2>
           <p class="section-lede">
-            Open a stage to see what I do for it as a consultant, with or without software, and the reports the HR Intelligence engine has for it today. The list only names reports that exist.
+            Open a stage to see what I do for it as a consultant, with or without software, and the reports the HR Intelligence engine has for it today.
           </p>
         </div>
         <!-- lifecycle-stages:start (generated by tools/build-lifecycle.js from data/lifecycle.json; do not edit) -->
         <div class="stage-list">
           <details class="stage" id="lifecycle-recruit">
-            <summary><span class="stage-index" aria-hidden="true">01</span><span class="stage-name">Attract and recruit</span><span class="stage-count">2 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">01</span><span class="stage-name">Attract and recruit</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I connect hiring data to what happens next: which sources, roles and routes lead to people who stay and do well, where the funnel loses people, and who gets through at each stage.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Recruitment</strong> <span>Open roles, the funnel from application to hire, source of hire, time to fill and time to accept, and recruiters side by side.</span></li>
-                <li><strong>Cross-Domain Explorer</strong> <span>Any recruiting figure cut by any people attribute, for the question nobody planned a report for.</span></li>
-              </ul>
+              <p class="stage-help">Hiring and sourcing activity tracked by department, recruiter, and recruitment manager. A complete KPI reporting suite to manage talent acquisition performance, measure time-to-hire, and identify exactly where the funnel bottlenecks are occurring.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-onboard">
-            <summary><span class="stage-index" aria-hidden="true">02</span><span class="stage-name">Onboard</span><span class="stage-count">3 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">02</span><span class="stage-name">Onboard</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I look at the first ninety days: who is settling in, whether induction and new-hire training is done, who leaves early, and where new starters run into trouble, so you can tell whether the cause is the team, the role or the way people are set up.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Onboarding Intelligence</strong> <span>Day 30, 60 and 90 checkpoints, who is overdue, new-starter risk bands, and where new starters are struggling by team or location.</span></li>
-                <li><strong>Attrition &amp; Leavers</strong> <span>Leavers inside their first year, by manager and team.</span></li>
-                <li><strong>Survey Desk</strong> <span>Who is due a ninety-day new-starter survey, with the send list and the questionnaire.</span></li>
-              </ul>
+              <p class="stage-help">Onboarding Intelligence: Tracks overdue probationary reviews, identifies new-starter risk bands, and pinpoints where recent hires are struggling by team or location. Early Attrition: Tracks leavers inside their first year, broken down by manager and team. Survey Desk: Automates new-hire satisfaction surveys triggered at bespoke checkpoints that you define, generating the send lists and questionnaires tailored to your onboarding rhythm.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-learn">
-            <summary><span class="stage-index" aria-hidden="true">03</span><span class="stage-name">Learn and develop</span><span class="stage-count">2 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">03</span><span class="stage-name">Learn and develop</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I report learning from a person&rsquo;s first weeks onwards: the induction and new-hire training that gets people up to speed, mandatory compliance a regulator or a board can rely on, and development, connected to what follows: who stays, who progresses, and where training is not reaching.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Learning &amp; Compliance</strong> <span>Mandatory training compliance by team, overdue items, and the learning delivered in the month.</span></li>
-                <li><strong>Top Talent</strong> <span>Who ranks highest and what they have in common, to steer development.</span></li>
-              </ul>
+              <p class="stage-help">Compliance &amp; Certifications: Tracks mandatory regulatory training and certification expiries. Development ROI: Goes beyond basic completion rates by joining learning data against performance and attrition, revealing whether your development programmes actually retain talent or just tick a box.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-perform">
-            <summary><span class="stage-index" aria-hidden="true">04</span><span class="stage-name">Perform and calibrate</span><span class="stage-count">4 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">04</span><span class="stage-name">Perform and calibrate</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I have worked on year-end performance calibration and reward: rating distributions, consistency across teams, the link from rating to pay and bonus, and the numbers that make a calibration meeting shorter and fairer.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Performance</strong> <span>The rating distribution, and where ratings cluster by team, so calibration can check whether the pattern reflects performance or how ratings were given.</span></li>
-                <li><strong>9-Boxer: talent review and calibration</strong> <span>Every person rated for what they achieved and how they went about it; the grid, the proposed pay and bonus, and workbooks to send to business owners and collect back.</span></li>
-                <li><strong>Team Signals</strong> <span>Teams where several warning signs appear at once, as a prompt to find out why.</span></li>
-                <li><strong>Employee Scorecard</strong> <span>One person&rsquo;s picture across absence, pay, performance and training.</span></li>
-              </ul>
+              <p class="stage-help">Year-end performance calibration and distribution curve tracking. Maps performance scores against pay and flight risk, ensuring your top performers are identified and protected.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-reward">
-            <summary><span class="stage-index" aria-hidden="true">05</span><span class="stage-name">Reward and recognise</span><span class="stage-count">4 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">05</span><span class="stage-name">Reward and recognise</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I model pay and bonus, report pay equity and the gender pay gap, and read pay alongside performance and leavers, so you can see whether reward is doing its job.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Reward</strong> <span>A salary review modelled against budget, the people it would take past their band, and proposals flagged for review.</span></li>
-                <li><strong>Pay Equity</strong> <span>The gender pay gap, quartiles, and pay gaps within a role.</span></li>
-                <li><strong>9-Boxer: pay and bonus pots</strong> <span>Pay-rise and bonus pots by division, and what the ratings ask for against each.</span></li>
-                <li><strong>Statutory Returns</strong> <span>The official returns that draw on pay and workforce data.</span></li>
-              </ul>
+              <p class="stage-help">Compa-ratio analysis, pay equity tracking, and bonus distribution modelling. Reconciles reward data against performance ratings to ensure compensation is genuinely merit-based and equitable across demographics.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-engage">
-            <summary><span class="stage-index" aria-hidden="true">06</span><span class="stage-name">Engage and listen</span><span class="stage-count">3 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">06</span><span class="stage-name">Engage and listen</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I design surveys and read the results against what the data shows, so you can see whether what people say matches what they do: in absence, in performance, and in leaving.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Engagement</strong> <span>Response, eNPS and wellbeing signals, and how people rate their line management.</span></li>
-                <li><strong>Culture Signals</strong> <span>Teams where culture signals point the same way.</span></li>
-                <li><strong>Survey Desk</strong> <span>Who is due a new-starter survey at ninety days or an exit survey on leaving, the send list and the questionnaire, without sending data anywhere.</span></li>
-              </ul>
+              <p class="stage-help">Joins pulse survey and engagement sentiment directly against attrition, absence, and performance. Shows you where high engagement masks burnout, or where low engagement is an early warning for turnover.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-inclusion">
-            <summary><span class="stage-index" aria-hidden="true">07</span><span class="stage-name">Diversity and inclusion</span><span class="stage-count">3 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">07</span><span class="stage-name">Diversity and inclusion</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I report representation, progression and pay for boards and regulators, including the Women in Finance Charter, and show where careers start to diverge between groups.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Culture &amp; Diversity</strong> <span>Gender and ethnicity mix, seniority, and women in leadership by division.</span></li>
-                <li><strong>Pay Equity</strong> <span>Pay gaps by gender, and ethnicity and disability where declared.</span></li>
-                <li><strong>Statutory Returns</strong> <span>Equality and gender pay returns.</span></li>
-              </ul>
+              <p class="stage-help">Demographic representation, gender and ethnicity pay gap precursors, and progression tracking. Identifies structural bottlenecks where diverse talent enters the organisation but fails to advance.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-attend">
-            <summary><span class="stage-index" aria-hidden="true">08</span><span class="stage-name">Attendance and wellbeing</span><span class="stage-count">8 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">08</span><span class="stage-name">Attendance and wellbeing</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I go beyond the absence rate: patterns, long-term cases, return to work and cost, and whether absence is an early sign of something else, such as people getting ready to leave.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Absence</strong> <span>The absence rate, by type, department and manager, and where it is moving.</span></li>
-                <li><strong>Absence Pulse</strong> <span>The current month against the pattern.</span></li>
-                <li><strong>Absence Trends</strong> <span>Seasonal and weekday patterns, return-to-work follow-up and spreading signals.</span></li>
-                <li><strong>Absence Watch</strong> <span>Teams and individuals who have crossed a trigger.</span></li>
-                <li><strong>Open Absences</strong> <span>Who is off today.</span></li>
-                <li><strong>Long-Term Absence</strong> <span>Long spells and how long they have run.</span></li>
-                <li><strong>Leave Balance</strong> <span>Holiday not yet taken and the year-end rush it creates.</span></li>
-                <li><strong>Holiday History by Group</strong> <span>Holiday requests, approvals and declines by group.</span></li>
-              </ul>
+              <p class="stage-help">Absence Management: Open absence reporting to flag unclosed records, track long-term sickness, and monitor Bradford Factor triggers and Monday/Friday patterns. Holiday &amp; Burnout: Holiday tracking to prevent year-end operational bottlenecks, spot burnout risk in teams not taking leave, and audit mandatory two-week continuous block leave for regulated roles.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-relations">
-            <summary><span class="stage-index" aria-hidden="true">09</span><span class="stage-name">Employee relations and conduct</span><span class="stage-count">2 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">09</span><span class="stage-name">Employee relations and conduct</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I turn case data into something a board can use: volumes, ageing and outcomes, and whether similar cases are being treated consistently.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Employee Relations</strong> <span>Open cases ranked by risk, ACAS timelines, and whether similar cases were treated alike across managers.</span></li>
-                <li><strong>Team Signals</strong> <span>Teams with several cases or signals at once.</span></li>
-              </ul>
+              <p class="stage-help">Caseload volumes, grievance timelines, and time-to-resolve metrics. Spots manager hot-spots where employee relations issues repeatedly surface, allowing HR to intervene before formal action is needed.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-succession">
-            <summary><span class="stage-index" aria-hidden="true">10</span><span class="stage-name">Talent and succession</span><span class="stage-count">6 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">10</span><span class="stage-name">Talent and succession</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I map critical roles, single points of failure and succession cover against the organisation as it really reports, not as the chart says it does.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Critical Roles</strong> <span>The roles the organisation cannot afford to lose and how well covered they are.</span></li>
-                <li><strong>Succession Search</strong> <span>Who could step up, searched across the population.</span></li>
-                <li><strong>Top Talent</strong> <span>Ranked talent view for strategic review.</span></li>
-                <li><strong>9-Boxer: talent review</strong> <span>The grid of what and how across the organisation, with the unbalanced boxes marked for discussion.</span></li>
-                <li><strong>Org View</strong> <span>Any manager&rsquo;s team with its measures.</span></li>
-                <li><strong>Org Chart</strong> <span>A printable organisation chart.</span></li>
-              </ul>
+              <p class="stage-help">Bench strength and critical role cover. Identifies single points of failure where a key manager has no credible deputy within one grade step, mapping the structural risk to the business.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-retain">
-            <summary><span class="stage-index" aria-hidden="true">11</span><span class="stage-name">Retain</span><span class="stage-count">3 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">11</span><span class="stage-name">Retain</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I look for the patterns that come before people leave, early enough to act on, and the groups where they are building up.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Retention Risk</strong> <span>Everyone ranked by flight risk, with the factors behind each score.</span></li>
-                <li><strong>Watch Register</strong> <span>The patterns that are forming now, and who they involve.</span></li>
-                <li><strong>Attrition &amp; Leavers</strong> <span>Attrition by manager, tenure and reason, and regrettable leavers.</span></li>
-              </ul>
+              <p class="stage-help">Predictive flight risk. Joins absence, pay position, performance, and engagement to surface teams and individuals who are statistically drifting away from the organisation, so you can have the conversation before they resign.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-exit">
-            <summary><span class="stage-index" aria-hidden="true">12</span><span class="stage-name">Exit</span><span class="stage-count">5 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">12</span><span class="stage-name">Exit</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I read leavers and exit surveys together, for everyone who leaves at any length of service, not only early leavers: why people go, which departures looked avoidable, and what that leaves behind in the teams they were part of.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>Survey Desk</strong> <span>Who is due an exit survey, whenever they leave, with the send list and the questionnaire.</span></li>
-                <li><strong>Exit Surveys</strong> <span>Why people leave, which departures looked preventable, and what leavers said about their line management.</span></li>
-                <li><strong>Leaver Management</strong> <span>Who is leaving and the backfill position.</span></li>
-                <li><strong>Future-Dated Leavers</strong> <span>Everyone with a leaving date still to come.</span></li>
-                <li><strong>Attrition &amp; Leavers</strong> <span>The leaver rate and profile.</span></li>
-              </ul>
+              <p class="stage-help">Regretted loss tracking and exit interview sentiment analysis. Maps why people are leaving against their managers and departments, testing your historical data to see the real patterns that precede a resignation.</p>
             </div>
           </details>
           <details class="stage" id="lifecycle-foundation">
-            <summary><span class="stage-index" aria-hidden="true">13</span><span class="stage-name">Core HR, structure and finance</span><span class="stage-count">6 reports</span></summary>
+            <summary><span class="stage-index" aria-hidden="true">13</span><span class="stage-name">Core HR, structure and finance</span></summary>
             <div class="stage-body">
-              <p class="stage-help"><strong>What I do:</strong> I build the foundation under every other stage: one agreed headcount and FTE, HR and Finance reconciled, the organisation structure, and data that survives a move between systems.</p>
-              <p class="stage-label">In the HR Intelligence engine</p>
-              <ul class="stage-reports">
-                <li><strong>FTE &amp; Governance</strong> <span>Headcount, FTE, contract mix, establishment and movement.</span></li>
-                <li><strong>Org Structure</strong> <span>Layers, spans of control and single points of failure.</span></li>
-                <li><strong>Reconciliation</strong> <span>Which records join the staff list and which do not.</span></li>
-                <li><strong>Data Health</strong> <span>What is wrong in the files, ranked by effect on the numbers.</span></li>
-                <li><strong>Mapping Desk</strong> <span>The few columns that need a decision, one click each.</span></li>
-                <li><strong>Migration Readiness</strong> <span>Whether the data is ready to move to a new system.</span></li>
-              </ul>
+              <p class="stage-help">One Version of the Truth: Headcount, FTE, and establishment gaps agreed between HR and Finance. Resolves data conflicts, maps organisational hierarchies, and provides an FTE governance model that both the board and the resource committee will accept.</p>
             </div>
           </details>
         </div>
@@ -542,55 +468,11 @@
           <p class="eyebrow">What it does</p>
           <h2 id="engine-title">An entire MI team, in one product.</h2>
           <p class="section-lede">
-            It gives HR business partners and managers clear direction: what is happening, where and why, and which conversations need to happen, with the evidence behind every point.
+            The engine does the heavy lifting of an MI team: it collects, cleans, reconciles, analyses, and reports. I built it from my experience across the whole HR lifecycle, on projects that include data rooms for sales and divestments, year-end performance calibration, and FTE governance models for resource committees.
           </p>
           <p class="section-lede">
-            It does the work of an MI team: it collects, cleans, reconciles, analyses and reports. I built it from my experience across the whole HR lifecycle — data rooms for sales and divestments, year-end performance calibration and reward, FTE governance models for a resource committee — and from almost twenty years with legacy systems, end-user computing models, data architecture and HRIS platforms.
+            It reads the HR exports you already produce, in your browser, without sending your data anywhere. It maps and cleans them, joins them on the person, and keeps your history so rising trends can be seen while there is still time to change direction. The aim is less processing time, fewer data errors, and data governed at source. It surfaces signals for us to investigate; it does not make employment decisions.
           </p>
-          <p class="section-lede">
-            The aim is less processing time, fewer data errors and data governed at source. It surfaces signals for a person to investigate; it does not make employment decisions.
-          </p>
-        </div>
-        <div class="engine-visual">
-        <!-- Pipeline diagram: describes the product honestly. No invented
-             statistics appear anywhere on this site. -->
-        <div class="engine-pipeline-wrap">
-          <div class="pipeline" role="img" aria-label="Your monthly HR exports are read inside your browser by the HR Intelligence engine, which produces ranked signals and a board-ready dataset. Nothing is uploaded to Help Studios.">
-            <div class="pipe-col">
-              <p class="pipe-label">Your exports</p>
-              <ul class="pipe-files">
-                <li><span class="dot-tick" aria-hidden="true"></span>Headcount</li>
-                <li><span class="dot-tick" aria-hidden="true"></span>Leavers</li>
-                <li><span class="dot-tick" aria-hidden="true"></span>Absence</li>
-                <li><span class="dot-tick" aria-hidden="true"></span>Performance</li>
-                <li class="pipe-more">+ whatever you have</li>
-              </ul>
-            </div>
-
-            <div class="pipe-link" aria-hidden="true"><span></span></div>
-
-            <div class="pipe-core">
-              <p class="pipe-label">In your browser</p>
-              <div class="core-card">
-                <span class="core-pulse" aria-hidden="true"></span>
-                <span class="core-title">HR Intelligence</span>
-                <span class="core-sub">Audit · map · collate · link · export</span>
-              </div>
-              <p class="core-note">Never uploaded to Help Studios</p>
-            </div>
-
-            <div class="pipe-link" aria-hidden="true"><span></span></div>
-
-            <div class="pipe-col">
-              <p class="pipe-label">What you get</p>
-              <ul class="pipe-out">
-                <li>Signals, ranked</li>
-                <li>Watch Register</li>
-                <li>Board-ready export</li>
-              </ul>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -602,13 +484,10 @@
     <section class="section section-satnav" id="satnav" aria-labelledby="satnav-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Where you are heading</p>
-          <h2 id="satnav-title">A monthly report is a rear-view mirror. This reads the road ahead.</h2>
+          <h2 id="satnav-title">Where you are heading</h2>
+          <p class="section-subhead">A monthly report is a rear-view mirror. This reads the road ahead.</p>
           <p class="section-lede">
-            Reporting that only describes last month tells you what has already happened. The HR Intelligence
-            engine keeps your history, joins the areas that normally sit apart, and shows which groups are
-            drifting away from the rest and where a measure is heading, so you can act while it still
-            matters. It also shows HR where its attention is best spent.
+            Standard HR reporting only tells you what is too late to fix. The HR Intelligence engine keeps your history, joins the areas that normally sit apart, and shows which groups are drifting away from the rest so you can act while it still matters. It also shows HR where its attention is best spent.
           </p>
         </div>
 
@@ -661,43 +540,19 @@
 
         <ol class="pipe-story">
           <li class="pipe-step">
-            <div class="pipe-step-copy">
-              <p class="pipe-step-no">Step 1</p>
-              <h3>Bring what you already have</h3>
-              <p>Workday, SAP SuccessFactors, Oracle, MHR iTrent, Zellis ResourceLink, BambooHR, a payroll file, a spreadsheet someone built years ago. Different column names, different date formats, the same facts underneath. Drop them in; nothing is uploaded.</p>
-            </div>
-            <ul class="pipe-chips" aria-label="Examples of sources it reads">
-              <li>Workday</li><li>SuccessFactors</li><li>Oracle HCM</li><li>iTrent</li><li>ResourceLink</li><li>BambooHR</li><li>Payroll</li><li>Excel and Access (EUC)</li>
-            </ul>
+            <p class="pipe-step-no">Step 1</p>
+            <h3>Your Raw Data</h3>
+            <p>Headcount, leavers, absence, performance, and legacy spreadsheets. Drop them in exactly as they are.</p>
           </li>
-
-          <li class="pipe-step pipe-step-shot">
-            <div class="pipe-step-copy">
-              <p class="pipe-step-no">Step 2</p>
-              <h3>It cleans, audits and puts them on one model</h3>
-              <p>Columns are mapped to one set of fields. What it cannot place on its own comes to a short list, biggest effect first, one click each, and your decision is remembered for next month. Conflicts between files are reported, not hidden, and every figure keeps its trail back to the source file.</p>
-            </div>
-            <figure class="pipe-shot">
-              <img src="assets/screens/mapping-desk.jpg" alt="The Mapping Desk: seven things need a decision, each with the column it concerns, a drop-down to choose the field, and a note saying whether it blocks the upload." width="1200" height="662" loading="lazy" decoding="async">
-              <figcaption>The Mapping Desk on synthetic Meridian Bank files: what it could not place, ranked.</figcaption>
-            </figure>
+          <li class="pipe-step">
+            <p class="pipe-step-no">Step 2</p>
+            <h3>Processed In-Browser</h3>
+            <p>The engine audits, maps, collates, and links the data directly on your machine. Nothing is ever uploaded to Help Studios.</p>
           </li>
-
-          <li class="pipe-step pipe-step-shot">
-            <div class="pipe-step-copy">
-              <p class="pipe-step-no">Step 3</p>
-              <h3>Out come the Power BI reports</h3>
-              <p>The same model produces a Power BI project: one page per area, headline figures, tables and charts, ready to open and refresh. For slicing by division, department and month it also writes a star-schema model with a library of measures, so Power BI recalculates from the engine&rsquo;s own figures and never disagrees with them.</p>
-              <ul class="check-list">
-                <li><span class="tick" aria-hidden="true"></span>Tick the screens you want, or describe the report in a sentence</li>
-                <li><span class="tick" aria-hidden="true"></span>Opened and checked in the real Power BI Desktop</li>
-                <li><span class="tick" aria-hidden="true"></span>No team of report builders, no parallel spreadsheet</li>
-              </ul>
-            </div>
-            <figure class="pipe-shot">
-              <img src="assets/screens/powerbi-headlines.jpg" alt="A Power BI report page, Headlines Report 31 May 2026: 3,013 active employees, headcount by division, absence, attrition, learning, recruitment, diversity, employee relations, organisation design and management risk panels, each with a one-line summary." width="1373" height="1052" loading="lazy" decoding="async">
-              <figcaption>A page rendered in Power BI from the generated project, synthetic Meridian Bank data. Power BI displays the figures; the engine calculates them.</figcaption>
-            </figure>
+          <li class="pipe-step">
+            <p class="pipe-step-no">Step 3</p>
+            <h3>The Output</h3>
+            <p>Ranked signals, a risk Watch Register, and a fully reconciled, board-ready export.</p>
           </li>
         </ol>
 
@@ -838,10 +693,7 @@
           <p class="eyebrow">How it reads your systems</p>
           <h2 id="how-title">Any system. Any mix. One model.</h2>
           <p class="section-lede">
-            The same person is a Worker in one system, an Assignment in another and a row
-            in somebody's spreadsheet. The HR Intelligence engine maps every source onto one
-            vocabulary, so the headcount in the board pack and the leavers in the
-            tracker finally describe the same people.
+            The same person is a 'Worker' in Workday, an 'Assignment' in Oracle, and a row in a legacy spreadsheet. I map every system onto one unified vocabulary. The headcount in your board pack and the leavers in your tracker finally describe the exact same people.
           </p>
           <p class="section-note">
             <strong>You do not have to run one of these.</strong> Workday, Oracle Fusion
@@ -1405,14 +1257,17 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-nav-group">
-          <h2 class="footer-nav-label">HR Intelligence engine</h2>
+        <div class='footer-nav-group'>
+          <h2 class='footer-nav-label'>HR Intelligence engine</h2>
           <ul>
-            <li><a href="#engine-intro">Why I built it</a></li>
-            <li><a href="#engine">What it does</a></li>
-            <li><a href="#satnav">Where you are heading</a></li>
-            <li><a href="#pipeline">Data to reports</a></li>
-            <li><a href="#tour">Tour</a></li>
+            <li><a href='#engine-intro'>Why I built it</a></li>
+            <li><a href='#engine'>What it does</a></li>
+            <li><a href='#satnav'>Where you are heading</a></li>
+            <li><a href='#pipeline'>Data to reports</a></li>
+            <li><a href='#tour'>Tour</a></li>
+            <li><a href='screenshots.html'>Screenshots of MI</a></li>
+            <li><a href='powerbi.html'>Power BI compatibility</a></li>
+            <li><a href='glossary.html'>Glossary of metrics</a></li>
           </ul>
         </div>
         <div class="footer-nav-group">
