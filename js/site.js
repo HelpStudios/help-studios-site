@@ -19,7 +19,7 @@
 
 var SITE = {
   demoVideo: '',            // '' until the recording exists
-  demoVideoTitle: 'HR Intelligence — four-minute walkthrough',
+  demoVideoTitle: 'HR Intelligence — five-minute walkthrough',
   narration: ''             // set to e.g. 'assets/media/hr-intelligence-90s.mp3'
 };
 
@@ -799,7 +799,7 @@ var SITE = {
   show(0, false);
 })();
 
-/* ── 11. The 90-second demo: a dismissible full-screen video ──────────────────
+/* ── 11. The five-minute demo: a dismissible full-screen video ────────────────
    The video is not requested until the dialog opens: the markup carries a
    data-src and no src, so a demo that is not yet recorded cannot 404 on page
    load. On open the src is copied in and playback starts; if the file is
