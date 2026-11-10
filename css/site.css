@@ -2463,3 +2463,10 @@ body {
 @media (max-width: 760px) { .chart-hero { grid-template-columns: 1fr; } }
 /* Hero: full deliverable descriptions read best in one column */
 .hero-offer .offer-list { grid-template-columns: 1fr; }
+
+/* The full journey page: a heading per chapter, and the story steps (the ones with a click-through) shown larger than the montage steps */
+.journey-chapter { margin: 3.25rem 0 0; font-size: 1.5rem; display: flex; align-items: baseline; gap: 0.75rem; }
+.journey-chapter-no { color: var(--c-accent); font-variant-numeric: tabular-nums; font-weight: 600; }
+.journey-grid { margin-top: 1rem; }
+.journey-card figcaption strong { display: block; color: var(--c-text); margin-bottom: 0.2rem; }
+@media (min-width: 900px) { .journey-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .journey-story { grid-column: span 2; } }
