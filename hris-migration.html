@@ -5,8 +5,8 @@
   <meta http-equiv='Content-Security-Policy' content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; manifest-src 'self'">
   <meta name='referrer' content='strict-origin-when-cross-origin'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>HRIS migration and reporting - Help Studios</title>
-  <meta name='description' content='HRIS migration and reporting: extraction, cleansing, mapping and cutover checks on the project, and native reporting rebuilt in the new HRIS so nothing is lost at go-live.'>
+  <title>HRIS migration - Help Studios</title>
+  <meta name='description' content='HRIS migration as part of your project team: scoping, legacy data and EUCs, the target system, field and value mapping, transformation, mock loads, testing, cutover and native reporting after go-live.'>
   <meta name='author' content='Help Studios Ltd'>
   <meta name='theme-color' content='#0b1220'>
   <meta name='color-scheme' content='dark light'>
@@ -15,14 +15,14 @@
   <meta property='og:site_name' content='Help Studios'>
   <meta property='og:locale' content='en_GB'>
   <meta property='og:url' content='https://help-studios.com/hris-migration.html'>
-  <meta property='og:title' content='HRIS migration and reporting - Help Studios'>
-  <meta property='og:description' content='HRIS migration and reporting: extraction, cleansing, mapping and cutover checks on the project, and native reporting rebuilt in the new HRIS so nothing is lost at go-live.'>
+  <meta property='og:title' content='HRIS migration - Help Studios'>
+  <meta property='og:description' content='HRIS migration as part of your project team: scoping, legacy data and EUCs, the target system, field and value mapping, transformation, mock loads, testing, cutover and native reporting after go-live.'>
   <meta property='og:image' content='https://help-studios.com/assets/og-image.png'>
   <meta property='og:image:width' content='1200'>
   <meta property='og:image:height' content='630'>
   <meta name='twitter:card' content='summary_large_image'>
-  <meta name='twitter:title' content='HRIS migration and reporting - Help Studios'>
-  <meta name='twitter:description' content='HRIS migration and reporting: extraction, cleansing, mapping and cutover checks on the project, and native reporting rebuilt in the new HRIS so nothing is lost at go-live.'>
+  <meta name='twitter:title' content='HRIS migration - Help Studios'>
+  <meta name='twitter:description' content='HRIS migration as part of your project team: scoping, legacy data and EUCs, the target system, field and value mapping, transformation, mock loads, testing, cutover and native reporting after go-live.'>
   <meta name='twitter:image' content='https://help-studios.com/assets/og-image.png'>
   <link rel='icon' href='assets/favicon.svg' type='image/svg+xml'>
   <link rel='icon' href='assets/favicon-32.png' sizes='32x32' type='image/png'>
@@ -48,8 +48,8 @@
           <button class='nav-menu-toggle' type='button' aria-expanded='false' aria-haspopup='true' aria-controls='menu-engine'>HR Intelligence engine <span class='nav-caret' aria-hidden='true'></span></button>
           <div class='nav-menu' id='menu-engine'>
             <ul class='nav-menu-list'>
-              <li><a class='nav-menu-feature' href='index.html#engine'><strong>What it does</strong><span>An entire MI team, in one product</span></a></li>
-              <li><a href='index.html#satnav'>Where you are heading</a></li>
+              <li><a class='nav-menu-feature' href='index.html#engine-intro'><strong>What it does</strong><span>An entire MI team, in one product</span></a></li>
+              <li><a href='mi-transformation.html#linked'>Linked insight</a></li>
               <li><a href='screenshots.html'>Screenshots of MI</a></li>
               <li><a href='journey.html'>The full journey, screen by screen</a></li>
               <li><a href='powerbi.html'>Power BI compatibility</a></li>
@@ -58,9 +58,10 @@
             </ul>
           </div>
         </div>
-        <a href='hris-migration.html'>HRIS migration &amp; reporting</a>
-        <a href='mi-transformation.html'>MI transformation</a>
-        <a href='bespoke-tools.html'>Bespoke tool creation / enhancement</a>
+        <a href='hris-migration.html'>HRIS migration</a>
+        <a href='hr-finance.html'>HR &amp; Finance</a>
+        <a href='mi-transformation.html'>People MI</a>
+        <a href='bespoke-tools.html'>Data transformation</a>
         <a class='btn btn-primary btn-sm nav-cta' href='index.html#contact'>Contact me</a>
       </nav>
     </div>
@@ -69,50 +70,94 @@
     <section class='section offer-hero'>
       <div class='wrap'>
         <div class='section-head'>
-          <p class='eyebrow'>HRIS migration &amp; reporting</p>
-          <h1>Move to a new HRIS without carrying your data debt across.</h1>
-          <p class='section-lede'>I manage the extraction, cleansing, and mapping of complex workforce data from legacy systems and EUCs into Workday, Oracle, and PeopleXD. Beyond the cutover, I rebuild your reporting natively in the new HRIS, establish zero-disruption reporting routines, and deploy Manager Self-Service (MSS) so leaders aren't bottlenecked by HR.</p>
-          <p class='section-lede offer-lede2'>I work on the migration project itself, with the HR Intelligence engine as my assistant.</p>
+          <p class='eyebrow'>HRIS migration</p>
+          <h1>HRIS migration, as part of your project team.</h1>
+          <p class='section-lede'>A migration is not just cleaning data and loading it. I work as part of the project team: understanding the system you are moving from and the one you are moving to, what legacy data there is and where it lives, whether it is consistent, how it has to change to fit the new system, and proving through testing that it has.</p>
+          <p class='section-lede offer-lede2'>I manage the extraction, cleansing, and mapping of complex workforce data from legacy systems and EUCs into Workday, Oracle, and PeopleXD. Beyond the cutover, I rebuild your reporting natively in the new HRIS, establish zero-disruption reporting routines, and deploy Manager Self-Service (MSS) so leaders aren't bottlenecked by HR.</p>
         </div>
+        <nav class='offer-jump' aria-label='On this page'><a href='#end-to-end'>The migration, end to end</a><a href='#assistant'>The engine as my assistant</a><a href='#done'>Where I have done this</a></nav>
       </div>
     </section>
-    <section class='section'>
+    <section class='section' id='end-to-end'>
       <div class='wrap'>
         <div class='section-head'>
-          <p class='eyebrow'>On the project</p>
-          <h2>From scoping to go-live, and the reporting after it.</h2>
-          <p class='section-lede'>Managing data extraction, mapping, and cutover checks for platforms like Workday, Oracle, PeopleXD and more, then engineering the native reporting so nothing is lost at go-live.</p>
+          <p class='eyebrow'>The migration, end to end</p>
+          <h2>Nine stages, and what I do in each.</h2>
+          <p class='section-lede'>The failure points of a migration are almost always the data, not the system.</p>
         </div>
-        <ol class='area-grid service-grid cols-2'>
-          <li class='area-card service-card'>
-            <span class='area-index' aria-hidden='true'>01</span>
-            <h3>Data Readiness: Exposing Data Debt</h3>
-            <p>Organisations often commit to multi-million-pound HRIS contracts and then migrate years of legacy data into the new system, carrying its problems straight over. Before you move, I audit your legacy exports and EUCs to expose your exact data debt: the unvarnished evidence of what is broken, and a prioritised correction list so your admin teams can fix the records at source before the migration begins.</p>
+        <ol class='offer-steps'>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>1</span>
+            <div>
+              <h3>Scope the move</h3>
+              <p>The system you are moving from and the one you are moving to, the modules in scope, every source of legacy data including the EUCs and spreadsheets kept beside the HRIS, who owns each, and what must move, what is archived and what is retired.</p>
+            </div>
           </li>
-          <li class='area-card service-card'>
-            <span class='area-index' aria-hidden='true'>02</span>
-            <h3>HRIS Migration Data Assurance</h3>
-            <p>When HR data is moving from one system to another. From scoping through to extracting legacy data, checking hierarchies, and reconciling cutover loads. The failure points of a migration are almost always the data, not the system.</p>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>2</span>
+            <div>
+              <h3>Audit the legacy data</h3>
+              <p>Every source profiled: what is complete, consistent and current, and what is duplicated or contradictory, ranked by what it would break, with a correction list your admin teams fix at source before anything moves.</p>
+            </div>
           </li>
-          <li class='area-card service-card'>
-            <span class='area-index' aria-hidden='true'>03</span>
-            <h3>Post-Migration Continuity &amp; MSS</h3>
-            <p>When you move to a new HRIS, the business still needs answers on Day 1. I replicate and improve your native reporting, but crucially, I engineer Manager Self-Service (MSS) dashboards. This stops highly paid HR Business Partners from functioning as report-runners, giving them back the bandwidth to act strategically, while line managers get their figures instantly.</p>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>3</span>
+            <div>
+              <h3>Know the target</h3>
+              <p>Before transforming anything, know what you are transforming it into: the new system’s data model and load rules, its mandatory fields, accepted formats and code lists, how it handles effective dates, and how it builds the hierarchies of organisations, positions, cost centres and managers.</p>
+            </div>
           </li>
-          <li class='area-card service-card'>
-            <span class='area-index' aria-hidden='true'>04</span>
-            <h3>Native HRIS Report Building</h3>
-            <p>When the answers should live where the data does. I build native reporting suites and individual reports inside your HRIS, so HR, managers and executives run them themselves, built to your agreed definitions and documented so your team can own them.</p>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>4</span>
+            <div>
+              <h3>Map the fields and the values</h3>
+              <p>Not only which column goes where, but what every value becomes. Do your absence reasons map to the absence reasons in the new system? Your leaver reasons, grades, job codes and contract types? One versioned mapping document, signed off by the people who own the data.</p>
+            </div>
+          </li>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>5</span>
+            <div>
+              <h3>Transform the shape of the data</h3>
+              <p>Legacy data rarely arrives in the shape the new system needs. Absence kept day by day, row by row, on a spreadsheet has to become one record per absence, and a date range with fifty days on one line may need splitting the other way. History, effective dates and every transformation rule are written down.</p>
+            </div>
+          </li>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>6</span>
+            <div>
+              <h3>Build the loads and run mock conversions</h3>
+              <p>Load files built to the new system’s specification and run as several mock conversions. Each one is reconciled, its defects are logged and fixed at source or in the rules, and it is run again until the data is ready.</p>
+            </div>
+          </li>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>7</span>
+            <div>
+              <h3>Test and reconcile</h3>
+              <p>Record counts and values reconciled from source to target after every load; data validated before functional testing begins; support for end-to-end and user acceptance testing, and for reconciling payroll parallel runs.</p>
+            </div>
+          </li>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>8</span>
+            <div>
+              <h3>Cut over</h3>
+              <p>A cutover plan with the data freeze, the order of the loads, the final reconciliation, the sign-offs and the point at which you would roll back, so go-live is a checklist rather than a leap.</p>
+            </div>
+          </li>
+          <li class='offer-step'>
+            <span class='offer-step-no' aria-hidden='true'>9</span>
+            <div>
+              <h3>Go live and keep going</h3>
+              <p>Native reporting suites and reports rebuilt in the new HRIS, Manager Self-Service in place, data issues fixed through the settling-in period, and the legacy data archived or retired as agreed.</p>
+            </div>
           </li>
         </ol>
       </div>
     </section>
-    <section class='section section-alt'>
+    <section class='section section-alt' id='assistant'>
       <div class='wrap'>
         <div class='section-head'>
-          <p class='eyebrow'>The model as my assistant</p>
-          <h2>The HR Intelligence engine does the heavy lifting on the data.</h2>
-          <p class='section-lede'>It absorbs raw HR exports, maps the columns to over 150 canonical fields and builds a clean, historical model, all in the browser, without sending the data anywhere.</p>
+          <p class='eyebrow'>The engine as my assistant</p>
+          <h2>The HR Intelligence engine cleans the data to a high standard first.</h2>
+          <p class='section-lede'>It reads raw HR exports from any HRIS or EUC, maps the columns to over 150 canonical fields and builds a clean, historical model, all in the browser, without sending the data anywhere. That makes it a tool for a migration as well as for MI.</p>
         </div>
         <ol class='area-grid service-grid'>
           <li class='area-card service-card'>
@@ -128,12 +173,12 @@
           <li class='area-card service-card'>
             <span class='area-index' aria-hidden='true'>03</span>
             <h3>Audit before you load</h3>
-            <p>A ranked list of what is wrong in the data, each with a count and what it affects, so admin teams fix records at source.</p>
+            <p>A ranked list of what is wrong in the data, each with a count and what it affects.</p>
           </li>
           <li class='area-card service-card'>
             <span class='area-index' aria-hidden='true'>04</span>
-            <h3>Mapping desk</h3>
-            <p>Unknown columns and wordings are decided once, one click each, and remembered.</p>
+            <h3>Value mapping</h3>
+            <p>Unknown columns and wordings decided once, one click each, and remembered: the place where absence reasons and leaver reasons are mapped.</p>
           </li>
           <li class='area-card service-card'>
             <span class='area-index' aria-hidden='true'>05</span>
@@ -142,17 +187,18 @@
           </li>
           <li class='area-card service-card'>
             <span class='area-index' aria-hidden='true'>06</span>
-            <h3>One model across systems</h3>
-            <p>Exports from different systems, legacy platforms and EUCs read into one model, so old and new can be compared line by line.</p>
+            <h3>Old and new compared</h3>
+            <p>Two extracts compared person by person: who is new, who has gone, what changed, with a bridge that always adds up.</p>
           </li>
         </ol>
       </div>
     </section>
-    <section class='section'>
+    <section class='section' id='done'>
       <div class='wrap'>
         <div class='section-head'>
-          <p class='eyebrow'>See it working</p>
-          <h2>The migration stages, on screen.</h2>
+          <p class='eyebrow'>Where I have done this</p>
+          <h2>HRIS migrations in regulated financial services.</h2>
+          <p class='section-lede'>Managing data extraction, mapping, and cutover checks for platforms like Workday, Oracle, PeopleXD and more, then engineering the native reporting so nothing is lost at go-live. On one Workday migration that included a job code remap and a band migration.</p>
         </div>
         <div class='shot-grid'>
           <figure class='shot-card'>
@@ -192,7 +238,7 @@
             <figcaption><strong>Migration Assistant</strong> Moving from one system to another, with the mapping carried across.</figcaption>
           </figure>
         </div>
-        <p class='section-note'>Every picture is the running product on Meridian Bank 2, a synthetic organisation. No real person, client or organisation appears in it. <a href='journey.html'>See the full journey, screen by screen</a>, or <a href='index.html#engine-intro'>watch the five-minute demo</a>.</p>
+        <p class='section-note'>Every picture is the running product on Meridian Bank 2, a synthetic organisation. No real person, client or organisation appears in it. <a href='journey.html'>See the full journey, screen by screen</a>, or <a href='index.html#top'>watch the five-minute demo</a>.</p>
       </div>
     </section>
     <section class='section'>
@@ -200,6 +246,8 @@
         <h2>Talk it through</h2>
         <p class='section-lede'>Start with the question your board keeps asking, or the data problem behind it.</p>
         <p class='hero-actions'><a class='btn btn-primary' href='index.html#contact'>Contact me</a></p>
+        <p class='eyebrow offer-next-label'>The other services</p>
+        <nav class='offer-next' aria-label='The other services'><a href='hr-finance.html'>HR and Finance alignment <span aria-hidden='true'>→</span></a><a href='mi-transformation.html'>People data and MI <span aria-hidden='true'>→</span></a><a href='bespoke-tools.html'>Data transformation and bespoke models <span aria-hidden='true'>→</span></a></nav>
       </div>
     </section>
 </main>
@@ -213,10 +261,11 @@
         <div class='footer-nav-group'>
           <h2 class='footer-nav-label'>Work with me</h2>
           <ul>
-            <li><a href='index.html#services'>Services</a></li>
-            <li><a href='hris-migration.html'>HRIS migration &amp; reporting</a></li>
-            <li><a href='mi-transformation.html'>MI transformation</a></li>
-            <li><a href='bespoke-tools.html'>Bespoke tool creation / enhancement</a></li>
+            <li><a href='index.html#what-i-do'>What I do</a></li>
+            <li><a href='hris-migration.html'>HRIS migration</a></li>
+            <li><a href='hr-finance.html'>HR and Finance alignment</a></li>
+            <li><a href='mi-transformation.html'>People data and MI</a></li>
+            <li><a href='bespoke-tools.html'>Data transformation and bespoke models</a></li>
             <li><a href='index.html#lifecycle'>HR lifecycle</a></li>
             <li><a href='index.html#trust'>About</a></li>
             <li><a href='index.html#contact'>Contact</a></li>
@@ -227,8 +276,8 @@
           <h2 class='footer-nav-label'>HR Intelligence engine</h2>
           <ul>
             <li><a href='index.html#engine-intro'>Why I built it</a></li>
-            <li><a href='index.html#engine'>What it does</a></li>
-            <li><a href='index.html#satnav'>Where you are heading</a></li>
+            <li><a href='index.html#engine-intro'>What it does</a></li>
+            <li><a href='mi-transformation.html#linked'>Linked insight</a></li>
             <li><a href='screenshots.html'>Screenshots of MI</a></li>
               <li><a href='journey.html'>The full journey, screen by screen</a></li>
             <li><a href='powerbi.html'>Power BI compatibility</a></li>
