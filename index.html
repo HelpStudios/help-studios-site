@@ -113,12 +113,12 @@
           <h1>Strategic HR data architecture, seamless migrations, and attention-grabbing MI.</h1>
 
           <p class='lede'>Whether you are navigating a complex migration from legacy systems and EUCs into a new HRIS, transforming fragmented records into attention-grabbing MI, or establishing one version of the truth between HR and Finance, I deliver the data architecture to make it happen.</p>
-          <p class='lede'>For almost twenty years in regulated financial services, I have partnered with HR Business Partners and Heads of Recruitment, Learning, Culture &amp; Engagement, and D&amp;I - liaising directly with executives and Finance to ensure HR is fully aligned with what the business needs to achieve through its people data.</p>
+          <p class='lede lede-2'>For almost twenty years in regulated financial services, I have partnered with HR Business Partners and Heads of Recruitment, Learning, Culture &amp; Engagement, and D&amp;I - liaising directly with executives and Finance to ensure HR is fully aligned with what the business needs to achieve through its people data.</p>
           
 
           <div class="hero-actions">
-            <a class="link-arrow" href="#track-record">See the track record<span aria-hidden="true"> →</span></a>
-            <a class="link-arrow" href="#services">See the services<span aria-hidden="true"> →</span></a>
+            <button class="btn btn-primary" type="button" data-video-open aria-haspopup="dialog"><span class="btn-play" aria-hidden="true"></span>Watch the five-minute demo</button>
+            <a class="link-arrow" href="journey.html">See every screen<span aria-hidden="true"> →</span></a>
           </div>
 
           <ul class="hero-facts">
@@ -128,8 +128,24 @@
           </ul>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-offer" role="group" aria-label='What I deliver'>
+        <div class="hero-media">
+          <button class="hero-video" type="button" data-video-open aria-haspopup="dialog">
+            <img src="assets/journey/10-report-canvas.jpg" alt="The Headlines screen of the HR Intelligence engine, as it appears in the demo video" width="1200" height="750" decoding="async">
+            <span class="hero-video-play" aria-hidden="true"></span>
+            <span class="hero-video-label"><strong>Watch the five-minute demo</strong><span>A walkthrough of the engine at work, on a synthetic organisation.</span></span>
+          </button>
+          <a class="hero-journey" href="journey.html">
+            <img src="assets/journey/01-data-matrix.jpg" alt="" width="1200" height="750" loading="lazy" decoding="async">
+            <span class="hero-journey-text"><strong>See every screen</strong><span>Every screen in order, from raw exports to the Power BI report.</span></span>
+            <span class="hero-journey-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- == WHAT I DELIVER: straight under the hero, so the offers are seen without scrolling far == -->
+    <section class="section section-offers" id="offers" aria-label="What I deliver">
+      <div class="wrap">
+<div class="hero-offer offers-band">
             <p class='pipe-label'>What I deliver</p>
             <ul class='offer-list'>
               <li><a href='hris-migration.html'><strong>HRIS Migrations &amp; Post-Go-Live Continuity</strong><span>I manage the extraction, cleansing, and mapping of complex workforce data from legacy systems and EUCs into Workday, Oracle, and PeopleXD. Beyond the cutover, I rebuild your reporting natively in the new HRIS, establish zero-disruption reporting routines, and deploy Manager Self-Service (MSS) so leaders aren't bottlenecked by HR.</span></a></li>
@@ -140,7 +156,131 @@
             </ul>
             <p class='offer-note'>Across all of it: I work directly with HR and Finance teams, reporting independently across the whole HR lifecycle, partnered with the relevant HR managers.</p>
           </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ────────────────────────────────────────────────────────
+         The silo problem, made tangible. Systems hold the same fact under
+         different column names and publish separate reports; the model renames
+         them into one vocabulary. Choosing a source rewrites the field map
+         underneath and never changes the right-hand column — which is the claim
+         the rest of the page makes in prose, here made operable.
+
+         The picker offers EVERY vocabulary the engine's registry holds, not a
+         chosen five. It used to offer five, and a reader running People XD,
+         iTrent, ResourceLink, ADP or Sage read the section as "not for me" —
+         the opposite of what the engine does, which is merge whatever it is
+         handed. The list is generated (website/tools/build-field-vocabulary.js)
+         so a platform cannot be silently dropped from the page, and the page
+         states per system how many of these columns that system's own
+         vocabulary names rather than implying every vendor named all of them.
+
+         Two honesty notes are built in rather than left to the reader: the names
+         are the engine registry's own, generated rather than typed into this
+         page (a hand-written copy of this table once printed twelve vendor names
+         no registry held), and a column a given system has no name for shows the
+         engine's own template column, muted, because that is what the engine
+         will actually do with that file.
+
+         The diagram is decorative (role="img"); the field map is the accessible
+         equivalent and lists the same mapping in text for every source the
+         picker offers. Default state is written into the markup, so with
+         JavaScript off the section still reads as Workday mapped into the model
+         — the harness checks that the static rows and the generated Workday rows
+         agree, chip for chip. -->
+    <!-- == GUIDED TOUR == -->
+    <section class="section section-tour" id="tour" aria-labelledby="tour-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Guided tour</p>
+          <h2 id="tour-title">Five questions a board asks, answered on screen.</h2>
+          <p class="section-lede">
+            These are the real screens from the running product, on a synthetic bank called
+            Meridian Bank. Pick a step, or use the arrow keys.
+          </p>
         </div>
+
+        <div class="tour" id="tour-app">
+          <div class="tour-tabs" role="tablist" aria-label="Guided tour steps">
+            <button type="button" role="tab" class="tour-tab" id="tour-tab-headlines" aria-controls="tour-panel-headlines" aria-selected="true" tabindex="0"><span class="tour-tab-no">1</span>Start with the answer</button><button type="button" role="tab" class="tour-tab" id="tour-tab-compare" aria-controls="tour-panel-compare" aria-selected="false" tabindex="-1"><span class="tour-tab-no">2</span>Ask what changed</button><button type="button" role="tab" class="tour-tab" id="tour-tab-risk" aria-controls="tour-panel-risk" aria-selected="false" tabindex="-1"><span class="tour-tab-no">3</span>Find who is at risk</button><button type="button" role="tab" class="tour-tab" id="tour-tab-story" aria-controls="tour-panel-story" aria-selected="false" tabindex="-1"><span class="tour-tab-no">4</span>Tell the story over time</button><button type="button" role="tab" class="tour-tab" id="tour-tab-survey" aria-controls="tour-panel-survey" aria-selected="false" tabindex="-1"><span class="tour-tab-no">5</span>Hear from your people</button>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-headlines" aria-labelledby="tour-tab-headlines">
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/headlines-report.jpg" alt="The Headlines Report for Meridian Bank: 1,299 heads and 1,274.6 FTE, absence and attrition with their status against target, and a one-sentence summary." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:33%;top:76%" data-pin="1" aria-label="Callout 1: Heads and FTE, side by side">1</button><button type="button" class="tour-pin" style="left:82%;top:76%" data-pin="2" aria-label="Callout 2: Red, amber or green against your own target">2</button><button type="button" class="tour-pin" style="left:50%;top:64%" data-pin="3" aria-label="Callout 3: One sentence for the board">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 1 of 5</p>
+                <h3>Start with the answer</h3>
+                <p class="tour-q">What does the board need to know this month?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>Heads and FTE, side by side</strong> 1,299 people are 1,274.6 full-time equivalents: part-time working is counted, not rounded away, and last year sits underneath.</li><li data-pin="2"><strong>Red, amber or green against your own target</strong> The rate is judged against the target you set, not a number baked into the product, and it says so.</li><li data-pin="3"><strong>One sentence for the board</strong> The screen writes its own summary: what needs attention, what is on target, what is for information.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-compare" aria-labelledby="tour-tab-compare" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/compare.jpg" alt="The Compare screen: April 2026 against May 2026, 1,299 opening, 26 joined, 26 left, 1,299 closing, with a bridge that adds up." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:62%;top:46%" data-pin="1" aria-label="Callout 1: Plain words first">1</button><button type="button" class="tour-pin" style="left:58%;top:50%" data-pin="2" aria-label="Callout 2: Every figure is a link">2</button><button type="button" class="tour-pin" style="left:44%;top:86%" data-pin="3" aria-label="Callout 3: The bridge always adds up">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 2 of 5</p>
+                <h3>Ask what changed</h3>
+                <p class="tour-q">Who joined, who left, and does it add up?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>Plain words first</strong> Headcount went from 1,299 to 1,299: 26 joined and 26 left, and 25 people who stayed changed something.</li><li data-pin="2"><strong>Every figure is a link</strong> Click joined, left or changed and see the named people behind the number.</li><li data-pin="3"><strong>The bridge always adds up</strong> Opening plus joined minus left is closing. If it ever does not, the screen says so instead of hiding it.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-risk" aria-labelledby="tour-tab-risk" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/retention-risk.jpg" alt="The Retention Risk screen: attrition against an industry benchmark, risk bands from critical to low, and the high-potential people flagged as high risk." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:33%;top:50%" data-pin="1" aria-label="Callout 1: Risk bands, not a verdict">1</button><button type="button" class="tour-pin" style="left:40.5%;top:60.5%" data-pin="2" aria-label="Callout 2: Check it against history">2</button><button type="button" class="tour-pin" style="left:85%;top:74%" data-pin="3" aria-label="Callout 3: Your succession pipeline at risk">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 3 of 5</p>
+                <h3>Find who is at risk</h3>
+                <p class="tour-q">Who is likely to leave, and what could we do first?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>Risk bands, not a verdict</strong> Critical, high, medium and low counts from the factors that are present. The engine surfaces the signal; HR investigates.</li><li data-pin="2"><strong>Check it against history</strong> One click tests the model against people who have already left, so you can see whether it earns your trust.</li><li data-pin="3"><strong>Your succession pipeline at risk</strong> High-potential people who are also flagged as high risk: the ones to talk to before they resign.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-story" aria-labelledby="tour-tab-story" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/company-story.jpg" alt="The Company Story screen: the latest twelve months against the twelve before for headcount, absence, leavers, training and diversity measures, each with its status against target." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:68%;top:40%" data-pin="1" aria-label="Callout 1: The biggest movers, in words">1</button><button type="button" class="tour-pin" style="left:62%;top:56%" data-pin="2" aria-label="Callout 2: Rated against your targets">2</button><button type="button" class="tour-pin" style="left:15%;top:51%" data-pin="3" aria-label="Callout 3: Follow any line to the page behind it">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 4 of 5</p>
+                <h3>Tell the story over time</h3>
+                <p class="tour-q">What changed this year, and what came before people left?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>The biggest movers, in words</strong> BAME representation up 4.4 points, absence up 0.3 points, women in leadership down 0.6: the chapter opens with what moved most.</li><li data-pin="2"><strong>Rated against your targets</strong> Every measure that has a target is rated red, amber or green; the rest are shown without a verdict.</li><li data-pin="3"><strong>Follow any line to the page behind it</strong> The open links take you to the screen with the detail, with your filters kept.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-panel" role="tabpanel" id="tour-panel-survey" aria-labelledby="tour-tab-survey" hidden>
+            <div class="tour-stage">
+              <figure class="tour-shot">
+                <img src="assets/screens/survey-answers.jpg" alt="The Survey Desk answers report for new starters: 80 answers, a recommend score, agreement by theme and a word picture of comments." width="1200" height="662" loading="lazy" decoding="async">
+                <button type="button" class="tour-pin" style="left:44%;top:49%" data-pin="1" aria-label="Callout 1: A score with its base">1</button><button type="button" class="tour-pin" style="left:46%;top:92%" data-pin="2" aria-label="Callout 2: Words, never comments">2</button><button type="button" class="tour-pin" style="left:50%;top:81%" data-pin="3" aria-label="Callout 3: Groups of ten or more">3</button>
+              </figure>
+              <div class="tour-copy">
+                <p class="tour-step-no">Step 5 of 5</p>
+                <h3>Hear from your people</h3>
+                <p class="tour-q">What did the new starters say, and is it enough to trust?</p>
+                <ol class="tour-notes"><li data-pin="1"><strong>A score with its base</strong> The recommend score is shown with how many answers it comes from, and nothing is reported under ten answers.</li><li data-pin="2"><strong>Words, never comments</strong> A bigger, bolder word was used by more people. The comments themselves are not kept or shown.</li><li data-pin="3"><strong>Groups of ten or more</strong> A department is named only when ten people answered; smaller groups are folded together so none can be found by subtraction.</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="tour-nav">
+            <button type="button" class="btn btn-secondary" id="tour-prev">Back</button>
+            <button type="button" class="btn btn-primary" id="tour-next">Next step</button>
+            <a class="link-arrow" href="#contact" id="tour-cta">Want this on your own data?<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+        <p class="section-note">Demo data &mdash; Meridian Bank, a synthetic organisation. The numbers on every step come from one run of the product.</p>
       </div>
     </section>
 
@@ -182,13 +322,10 @@
           </p>
         </div>
 
-        <button class="video-thumb" id="video-open" type="button" aria-haspopup="dialog">
-          <span class="video-thumb-art" aria-hidden="true"><span class="video-thumb-play"></span></span>
-          <span class="video-thumb-text">
-            <strong>Watch the five-minute demo</strong>
-            <span>A walkthrough of the engine at work, on a synthetic organisation. Loading stages are sped up and marked.</span>
-          </span>
-        </button>
+        <div class="hero-actions">
+          <button class="btn btn-secondary" type="button" data-video-open aria-haspopup="dialog">Watch the five-minute demo</button>
+          <a class="link-arrow" href="journey.html">See every screen<span aria-hidden="true"> →</span></a>
+        </div>
       </div>
     </section>
 
@@ -206,10 +343,10 @@
           <div class="difference-cause">
             <h3 class="section-subhead">Seeing cause and effect across the lifecycle</h3>
             <p class="section-lede">
-              For example, we can test how absence patterns influence retention. Using synthetic test data, the engine can reveal if a specific department has a spike in Monday and Friday absences, and immediately cross-reference that against a rising attrition trend or a manager whose team is under strain.
+              For example, I can test how absence patterns influence retention. The engine can reveal if a specific department has a spike in Monday and Friday absences, and immediately cross-reference that against a rising attrition trend or a manager whose team is under strain.
             </p>
-            <p class="section-note">
-              When we join the areas together, a healthy-looking average might reveal a pocket of risk, giving HR the exact signal of where to step in and have a conversation before people leave.
+            <p class="section-lede">
+              When I join the areas together, a healthy-looking average might reveal a pocket of risk, giving HR the exact signal of where to step in and have a conversation before people leave.
             </p>
           </div>
         </div>
@@ -516,7 +653,7 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">From export to board pack</p>
-          <h2 id="pipeline-title">Your exports in. The reports a team would build, out.</h2>
+          <h2 id="pipeline-title">From your raw exports to the reports an MI team would build.</h2>
           <p class="section-lede">
             Most HR functions hold years of HRIS data they cannot use, because turning it into
             something reliable takes a team and weeks. This is that work, done the same way every
@@ -543,133 +680,6 @@
         </ol>
 
         <p class="satnav-proof pipe-proof"><strong>Tested against deliberately hostile files:</strong> nine exports carrying 24 habits of real HRIS and spreadsheet extracts (report titles above the header, totals inside the data, several date formats, differently padded ids, European number formats, a pivot-shaped file). 19 were handled correctly first time, 5 were flagged for a person to decide, and none was silently read wrong. The audit of all nine took 3.8 seconds on a laptop, including opening the browser.</p>
-        <p class="section-note">Synthetic demo data throughout.</p>
-      </div>
-    </section>
-
-    <!-- ── HOW IT WORKS ────────────────────────────────────────────────────────
-         The silo problem, made tangible. Systems hold the same fact under
-         different column names and publish separate reports; the model renames
-         them into one vocabulary. Choosing a source rewrites the field map
-         underneath and never changes the right-hand column — which is the claim
-         the rest of the page makes in prose, here made operable.
-
-         The picker offers EVERY vocabulary the engine's registry holds, not a
-         chosen five. It used to offer five, and a reader running People XD,
-         iTrent, ResourceLink, ADP or Sage read the section as "not for me" —
-         the opposite of what the engine does, which is merge whatever it is
-         handed. The list is generated (website/tools/build-field-vocabulary.js)
-         so a platform cannot be silently dropped from the page, and the page
-         states per system how many of these columns that system's own
-         vocabulary names rather than implying every vendor named all of them.
-
-         Two honesty notes are built in rather than left to the reader: the names
-         are the engine registry's own, generated rather than typed into this
-         page (a hand-written copy of this table once printed twelve vendor names
-         no registry held), and a column a given system has no name for shows the
-         engine's own template column, muted, because that is what the engine
-         will actually do with that file.
-
-         The diagram is decorative (role="img"); the field map is the accessible
-         equivalent and lists the same mapping in text for every source the
-         picker offers. Default state is written into the markup, so with
-         JavaScript off the section still reads as Workday mapped into the model
-         — the harness checks that the static rows and the generated Workday rows
-         agree, chip for chip. -->
-    <!-- == GUIDED TOUR == -->
-    <section class="section section-tour" id="tour" aria-labelledby="tour-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Guided tour</p>
-          <h2 id="tour-title">See the answers. Five steps, nothing to install.</h2>
-          <p class="section-lede">
-            These are the real screens from the running product, on a synthetic bank called
-            Meridian Bank. Pick a step, or use the arrow keys. The tour shows the product;
-            it does not contain it.
-          </p>
-        </div>
-
-        <div class="tour" id="tour-app">
-          <div class="tour-tabs" role="tablist" aria-label="Guided tour steps">
-            <button type="button" role="tab" class="tour-tab" id="tour-tab-headlines" aria-controls="tour-panel-headlines" aria-selected="true" tabindex="0"><span class="tour-tab-no">1</span>Start with the answer</button><button type="button" role="tab" class="tour-tab" id="tour-tab-compare" aria-controls="tour-panel-compare" aria-selected="false" tabindex="-1"><span class="tour-tab-no">2</span>Ask what changed</button><button type="button" role="tab" class="tour-tab" id="tour-tab-risk" aria-controls="tour-panel-risk" aria-selected="false" tabindex="-1"><span class="tour-tab-no">3</span>Find who is at risk</button><button type="button" role="tab" class="tour-tab" id="tour-tab-story" aria-controls="tour-panel-story" aria-selected="false" tabindex="-1"><span class="tour-tab-no">4</span>Tell the story over time</button><button type="button" role="tab" class="tour-tab" id="tour-tab-survey" aria-controls="tour-panel-survey" aria-selected="false" tabindex="-1"><span class="tour-tab-no">5</span>Hear from your people</button>
-          </div>
-          <div class="tour-panel" role="tabpanel" id="tour-panel-headlines" aria-labelledby="tour-tab-headlines">
-            <div class="tour-stage">
-              <figure class="tour-shot">
-                <img src="assets/screens/headlines-report.jpg" alt="The Headlines Report for Meridian Bank: 1,299 heads and 1,274.6 FTE, absence and attrition with their status against target, and a one-sentence summary." width="1200" height="662" loading="lazy" decoding="async">
-                <button type="button" class="tour-pin" style="left:33%;top:76%" data-pin="1" aria-label="Callout 1: Heads and FTE, side by side">1</button><button type="button" class="tour-pin" style="left:82%;top:76%" data-pin="2" aria-label="Callout 2: Red, amber or green against your own target">2</button><button type="button" class="tour-pin" style="left:50%;top:64%" data-pin="3" aria-label="Callout 3: One sentence for the board">3</button>
-              </figure>
-              <div class="tour-copy">
-                <p class="tour-step-no">Step 1 of 5</p>
-                <h3>Start with the answer</h3>
-                <p class="tour-q">What does the board need to know this month?</p>
-                <ol class="tour-notes"><li data-pin="1"><strong>Heads and FTE, side by side</strong> 1,299 people are 1,274.6 full-time equivalents: part-time working is counted, not rounded away, and last year sits underneath.</li><li data-pin="2"><strong>Red, amber or green against your own target</strong> The rate is judged against the target you set, not a number baked into the product, and it says so.</li><li data-pin="3"><strong>One sentence for the board</strong> The screen writes its own summary: what needs attention, what is on target, what is for information.</li></ol>
-              </div>
-            </div>
-          </div>
-          <div class="tour-panel" role="tabpanel" id="tour-panel-compare" aria-labelledby="tour-tab-compare" hidden>
-            <div class="tour-stage">
-              <figure class="tour-shot">
-                <img src="assets/screens/compare.jpg" alt="The Compare screen: April 2026 against May 2026, 1,299 opening, 26 joined, 26 left, 1,299 closing, with a bridge that adds up." width="1200" height="662" loading="lazy" decoding="async">
-                <button type="button" class="tour-pin" style="left:62%;top:46%" data-pin="1" aria-label="Callout 1: Plain words first">1</button><button type="button" class="tour-pin" style="left:58%;top:50%" data-pin="2" aria-label="Callout 2: Every figure is a link">2</button><button type="button" class="tour-pin" style="left:44%;top:86%" data-pin="3" aria-label="Callout 3: The bridge always adds up">3</button>
-              </figure>
-              <div class="tour-copy">
-                <p class="tour-step-no">Step 2 of 5</p>
-                <h3>Ask what changed</h3>
-                <p class="tour-q">Who joined, who left, and does it add up?</p>
-                <ol class="tour-notes"><li data-pin="1"><strong>Plain words first</strong> Headcount went from 1,299 to 1,299: 26 joined and 26 left, and 25 people who stayed changed something.</li><li data-pin="2"><strong>Every figure is a link</strong> Click joined, left or changed and see the named people behind the number.</li><li data-pin="3"><strong>The bridge always adds up</strong> Opening plus joined minus left is closing. If it ever does not, the screen says so instead of hiding it.</li></ol>
-              </div>
-            </div>
-          </div>
-          <div class="tour-panel" role="tabpanel" id="tour-panel-risk" aria-labelledby="tour-tab-risk" hidden>
-            <div class="tour-stage">
-              <figure class="tour-shot">
-                <img src="assets/screens/retention-risk.jpg" alt="The Retention Risk screen: attrition against an industry benchmark, risk bands from critical to low, and the high-potential people flagged as high risk." width="1200" height="662" loading="lazy" decoding="async">
-                <button type="button" class="tour-pin" style="left:33%;top:50%" data-pin="1" aria-label="Callout 1: Risk bands, not a verdict">1</button><button type="button" class="tour-pin" style="left:40.5%;top:60.5%" data-pin="2" aria-label="Callout 2: Check it against history">2</button><button type="button" class="tour-pin" style="left:85%;top:74%" data-pin="3" aria-label="Callout 3: Your succession pipeline at risk">3</button>
-              </figure>
-              <div class="tour-copy">
-                <p class="tour-step-no">Step 3 of 5</p>
-                <h3>Find who is at risk</h3>
-                <p class="tour-q">Who is likely to leave, and what could we do first?</p>
-                <ol class="tour-notes"><li data-pin="1"><strong>Risk bands, not a verdict</strong> Critical, high, medium and low counts from the factors that are present. The engine surfaces the signal; HR investigates.</li><li data-pin="2"><strong>Check it against history</strong> One click tests the model against people who have already left, so you can see whether it earns your trust.</li><li data-pin="3"><strong>Your succession pipeline at risk</strong> High-potential people who are also flagged as high risk: the ones to talk to before they resign.</li></ol>
-              </div>
-            </div>
-          </div>
-          <div class="tour-panel" role="tabpanel" id="tour-panel-story" aria-labelledby="tour-tab-story" hidden>
-            <div class="tour-stage">
-              <figure class="tour-shot">
-                <img src="assets/screens/company-story.jpg" alt="The Company Story screen: the latest twelve months against the twelve before for headcount, absence, leavers, training and diversity measures, each with its status against target." width="1200" height="662" loading="lazy" decoding="async">
-                <button type="button" class="tour-pin" style="left:68%;top:40%" data-pin="1" aria-label="Callout 1: The biggest movers, in words">1</button><button type="button" class="tour-pin" style="left:62%;top:56%" data-pin="2" aria-label="Callout 2: Rated against your targets">2</button><button type="button" class="tour-pin" style="left:15%;top:51%" data-pin="3" aria-label="Callout 3: Follow any line to the page behind it">3</button>
-              </figure>
-              <div class="tour-copy">
-                <p class="tour-step-no">Step 4 of 5</p>
-                <h3>Tell the story over time</h3>
-                <p class="tour-q">What changed this year, and what came before people left?</p>
-                <ol class="tour-notes"><li data-pin="1"><strong>The biggest movers, in words</strong> BAME representation up 4.4 points, absence up 0.3 points, women in leadership down 0.6: the chapter opens with what moved most.</li><li data-pin="2"><strong>Rated against your targets</strong> Every measure that has a target is rated red, amber or green; the rest are shown without a verdict.</li><li data-pin="3"><strong>Follow any line to the page behind it</strong> The open links take you to the screen with the detail, with your filters kept.</li></ol>
-              </div>
-            </div>
-          </div>
-          <div class="tour-panel" role="tabpanel" id="tour-panel-survey" aria-labelledby="tour-tab-survey" hidden>
-            <div class="tour-stage">
-              <figure class="tour-shot">
-                <img src="assets/screens/survey-answers.jpg" alt="The Survey Desk answers report for new starters: 80 answers, a recommend score, agreement by theme and a word picture of comments." width="1200" height="662" loading="lazy" decoding="async">
-                <button type="button" class="tour-pin" style="left:44%;top:49%" data-pin="1" aria-label="Callout 1: A score with its base">1</button><button type="button" class="tour-pin" style="left:46%;top:92%" data-pin="2" aria-label="Callout 2: Words, never comments">2</button><button type="button" class="tour-pin" style="left:50%;top:81%" data-pin="3" aria-label="Callout 3: Groups of ten or more">3</button>
-              </figure>
-              <div class="tour-copy">
-                <p class="tour-step-no">Step 5 of 5</p>
-                <h3>Hear from your people</h3>
-                <p class="tour-q">What did the new starters say, and is it enough to trust?</p>
-                <ol class="tour-notes"><li data-pin="1"><strong>A score with its base</strong> The recommend score is shown with how many answers it comes from, and nothing is reported under ten answers.</li><li data-pin="2"><strong>Words, never comments</strong> A bigger, bolder word was used by more people. The comments themselves are not kept or shown.</li><li data-pin="3"><strong>Groups of ten or more</strong> A department is named only when ten people answered; smaller groups are folded together so none can be found by subtraction.</li></ol>
-              </div>
-            </div>
-          </div>
-          <div class="tour-nav">
-            <button type="button" class="btn btn-secondary" id="tour-prev">Back</button>
-            <button type="button" class="btn btn-primary" id="tour-next">Next step</button>
-            <a class="link-arrow" href="#contact" id="tour-cta">Want this on your own data?<span aria-hidden="true"> &rarr;</span></a>
-          </div>
-        </div>
-        <p class="section-note">Demo data &mdash; Meridian Bank, a synthetic organisation. The numbers on every step come from one run of the product.</p>
       </div>
     </section>
 
@@ -1035,97 +1045,6 @@
       </div>
     </section>
 
-    <!-- ── TRY IT ──────────────────────────────────────────────────────────────
-         The first step of the engine, running on this page — not a picture of a
-         screen. The sample export is an inline string in js/site.js; the same
-         parser and profiler the product opens a file with reads it here, in the
-         tab. Nothing is uploaded, stored or requested, and the harness asserts
-         that clicking the button adds zero network requests.
-
-         The page deliberately does NOT ask for a client's own export: the
-         brief forbids requesting HR file uploads on the marketing site, and a
-         regulated buyer should not have to hand an HR extract to a website in
-         order to check a claim about it. On an engagement that first step runs
-         on the client's own machine, which is the point. -->
-    <section class="section section-try" id="try" aria-labelledby="try-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Check the privacy claim — do not take it on trust</p>
-          <h2 id="try-title">Watch it read a file. Here, in this tab.</h2>
-          <p class="section-lede">
-            Before the HR Intelligence engine calculates anything, it reads the header row and profiles
-            every column. That step is running on this page, on an export held in memory — so
-            you can see the work without handing a file to a website. Your own data stays on
-            your own machine, which is the whole claim.
-          </p>
-        </div>
-
-        <div class="try-grid">
-          <div class="try-panel">
-            <div class="try-steps">
-              <p class="trace-label">What runs here</p>
-              <ol class="try-step-list">
-                <li><span>Read the header row and detect the delimiter</span></li>
-                <li><span>Profile every column: shape, fill rate, distinct values</span></li>
-                <li><span>Match each header to a field in the unified model</span></li>
-              </ol>
-            </div>
-
-            <div class="try-panel-actions">
-              <button class="try-run" id="try-sample" type="button">
-                <svg class="try-run-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8 5.5v13l10-6.5-10-6.5Z" fill="currentColor"/>
-                </svg>
-                Profile a sample export
-              </button>
-              <button class="try-clear" id="try-clear" type="button" hidden>Clear</button>
-            </div>
-
-            <p class="try-status" id="try-status" role="status" aria-live="polite"></p>
-            <p class="try-privacy">
-              The sample is a fictional Meridian Bank headcount export, held as a string in
-              <code>js/site.js</code>. No upload, no storage, no request — the Network panel
-              stays empty.
-            </p>
-          </div>
-
-          <div class="try-placeholder" id="try-placeholder">
-            <span>The profile appears here: every column, its shape, and the field it maps to.</span>
-          </div>
-
-          <div class="try-output" id="try-output" hidden>
-            <div class="try-file-head">
-              <p class="trace-label">Profile</p>
-              <p class="try-file-name" id="try-file-name">—</p>
-              <ul class="try-file-facts" id="try-file-facts"></ul>
-            </div>
-
-            <div class="try-table-wrap">
-              <table class="try-table">
-                <caption class="visually-hidden">Columns found in the file, the shape each one looks like, and the unified field its header appears to map to</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Column in your file</th>
-                    <th scope="col">Looks like</th>
-                    <th scope="col">Maps to</th>
-                  </tr>
-                </thead>
-                <tbody id="try-rows"></tbody>
-              </table>
-            </div>
-
-            <p class="try-verdict" id="try-verdict"></p>
-
-            <p class="try-note">
-              Header matching is a heuristic, and it is the cheapest part of the mapping. In the
-              product the mapper is configured per client, so every header it cannot place
-              becomes a decision surfaced in Client Setup rather than a guess.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ── TRUST ────────────────────────────────────────────────────────────── -->
 
     <section class="section section-trust" id="trust" aria-labelledby="trust-title">
@@ -1144,7 +1063,7 @@
           <article class="trust-card">
             <h3>Data never leaves your device</h3>
             <p>Processing runs entirely in the browser; Help Studios never receives your files.
-              <a class="trust-check" href="#try">See the first step run on this page</a>.</p>
+              <a class="trust-check" href="journey.html">See every screen, in order</a>.</p>
           </article>
           <article class="trust-card">
             <h3>Almost twenty years in regulated FS</h3>
@@ -1266,7 +1185,6 @@
           <h2 class="footer-nav-label">Proof</h2>
           <ul>
             <li><a href="#how">How it reads files</a></li>
-            <li><a href="#try">Try the profiler</a></li>
           </ul>
         </div>
         <div class="footer-nav-group footer-nav-lifecycle">

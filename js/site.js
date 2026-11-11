@@ -808,7 +808,8 @@ var SITE = {
    return focus to the thumbnail that opened it. */
 (function () {
   'use strict';
-  var opener = document.getElementById('video-open');
+  var openers = Array.prototype.slice.call(document.querySelectorAll('[data-video-open], #video-open'));
+  var opener = openers[0];
   var modal = document.getElementById('video-modal');
   var closeBtn = document.getElementById('video-modal-close');
   var video = document.getElementById('demo-video');
@@ -838,6 +839,7 @@ var SITE = {
     startVideo();
     if (closeBtn) closeBtn.focus();
   }
+  var lastOpener = null;
 
   function closeModal() {
     if (!modal.classList.contains('is-open')) return;
@@ -849,10 +851,10 @@ var SITE = {
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
-    opener.focus();
+    (lastOpener || opener).focus();
   }
 
-  opener.addEventListener('click', openModal);
+  openers.forEach(function (el) { el.addEventListener('click', function () { lastOpener = el; openModal(); }); });
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (video) video.addEventListener('error', showFallback);
   modal.addEventListener('click', function (event) { if (event.target === modal) closeModal(); });
