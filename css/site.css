@@ -2470,3 +2470,8 @@ body {
 .journey-grid { margin-top: 1rem; }
 .journey-card figcaption strong { display: block; color: var(--c-text); margin-bottom: 0.2rem; }
 @media (min-width: 900px) { .journey-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .journey-story { grid-column: span 2; } }
+
+/* Privacy page */
+.privacy-list { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; max-width: 46rem; }
+.privacy-list li { color: var(--c-text-muted, inherit); line-height: 1.6; }
+.privacy-list strong { color: var(--c-text); }
