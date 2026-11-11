@@ -2603,3 +2603,8 @@ body {
 
 /* The engine section: room between the hostile-files result and the demo buttons */
 .section-engine-intro .pipe-proof { margin-bottom: 1.75rem; }
+
+/* A highlighted proof point inside a service section (the audit on its own, timed) */
+.offer-callout { margin-top: 1.75rem; padding: 1.25rem 1.5rem; border: 1px solid var(--c-accent-line, rgba(45, 212, 191, 0.4)); border-left: 3px solid var(--c-accent); border-radius: var(--r-md); background: rgba(45, 212, 191, 0.06); max-width: 60rem; }
+.offer-callout h3 { margin: 0 0 0.4rem; font-size: 1.1rem; }
+.offer-callout p { margin: 0; color: var(--c-text-2); line-height: 1.6; }
