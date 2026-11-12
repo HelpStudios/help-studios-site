@@ -2643,3 +2643,8 @@ body {
 /* A stage's "built to order" line: what is a bespoke model rather than an engine screen today */
 .offer-bespoke { margin: 1rem 0 0; padding: 0.7rem 0.9rem; border-left: 3px solid var(--c-accent); background: rgba(45, 212, 191, 0.06); border-radius: 0 8px 8px 0; font-size: 0.93rem; color: var(--c-text-2); line-height: 1.55; }
 .offer-bespoke strong { color: var(--c-text); }
+
+/* 12 Nov (restore): corporate change as its own band under the four areas; the hero keeps only the big facts */
+.corp-band { margin-top: 1.5rem; padding: 1.5rem 1.75rem; border: 1px solid var(--c-line-faint); border-left: 3px solid var(--c-accent); border-radius: var(--r-md); background: var(--c-surface); max-width: 70rem; }
+.corp-band h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+.corp-band p { margin: 0 0 0.75rem; color: var(--c-text-2); line-height: 1.6; }
