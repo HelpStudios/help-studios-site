@@ -329,7 +329,7 @@ p { text-wrap: pretty; }
    the inline nav needs 748px, which leaves 269 for the brand and it was 306, so
    the product suffix steps aside rather than the five links wrap onto a second
    row. Below 1080 the nav collapses into the toggle and the suffix comes back. */
-@media (min-width: 1081px) and (max-width: 1180px) {
+@media (min-width: 1361px) and (max-width: 1480px) {
   .brand-product,
   .brand-rule { display: none; }
 }
@@ -1515,18 +1515,18 @@ p { text-wrap: pretty; }
 
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 
-@media (max-width: 1080px) {
+@media (max-width: 1360px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-copy h1 { max-width: 26ch; }
   .powerbi-grid { grid-template-columns: 1fr; }
   .powerbi-visual { max-width: 520px; }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1360px) {
   .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1360px) {
   .nav-toggle { display: inline-flex; }
 
   .site-nav {
@@ -2196,7 +2196,7 @@ body {
   box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.6);
 }
 .nav-item.is-open .nav-menu { display: block; }
-@media (hover: hover) and (min-width: 1081px) { .nav-has-menu:hover .nav-menu { display: block; } .nav-has-menu:hover .nav-caret { transform: rotate(225deg) translateY(-1px); } }
+@media (hover: hover) and (min-width: 1361px) { .nav-has-menu:hover .nav-menu { display: block; } .nav-has-menu:hover .nav-caret { transform: rotate(225deg) translateY(-1px); } }
 #menu-lifecycle { min-width: 30rem; }
 .nav-menu-label { margin: 0 0 0.6rem; font-size: 0.75rem; letter-spacing: 0.04em; color: var(--c-text-3); }
 .nav-menu-list { list-style: none; margin: 0; padding: 0; }
@@ -2205,7 +2205,7 @@ body {
 .site-nav .nav-menu a:not(.btn) { display: block; padding: 0.42rem 0; border-bottom: 0; font-size: 0.875rem; }
 .site-nav .nav-menu a:not(.btn):hover { color: var(--c-accent-hover); border-bottom: 0; }
 .site-nav .nav-menu-all { margin-top: 0.5rem; padding-top: 0.7rem !important; border-top: 1px solid var(--c-line) !important; color: var(--c-accent) !important; font-weight: 600; }
-@media (max-width: 1080px) {
+@media (max-width: 1360px) {
   .site-nav { max-height: calc(100vh - var(--header-h)); overflow-y: auto; }
   .nav-item { display: block; border-bottom: 1px solid var(--c-line); }
   .nav-menu-toggle { width: 100%; justify-content: space-between; padding: 0.9rem 0; font-size: 0.9375rem; border-bottom: 0; }
@@ -2498,10 +2498,10 @@ body {
 .offer-close { text-align: left; }
 
 /* The header holds one row: no label breaks inside itself (11 Nov 2026: 'Bespoke tool creation / enhancement' split over two lines at 1280px) */
-@media (min-width: 1081px) { .site-nav > a, .site-nav .nav-menu-toggle, .site-nav .nav-cta { white-space: nowrap; } }
+@media (min-width: 1361px) { .site-nav > a, .site-nav .nav-menu-toggle, .site-nav .nav-cta { white-space: nowrap; } }
 
 /* Between 1081 and 1180 the four doors plus Contact me need a little less space between them */
-@media (min-width: 1081px) and (max-width: 1180px) { .site-nav { gap: 1rem; } }
+@media (min-width: 1361px) and (max-width: 1480px) { .site-nav { gap: 1rem; } }
 
 /* Offer pages: card grids that fill their rows (four cards two by two, eight cards four across) so no card sits alone on a row */
 @media (min-width: 900px) { .service-grid.cols-2, .service-grid.cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -2648,3 +2648,7 @@ body {
 .corp-band { margin-top: 1.5rem; padding: 1.5rem 1.75rem; border: 1px solid var(--c-line-faint); border-left: 3px solid var(--c-accent); border-radius: var(--r-md); background: var(--c-surface); max-width: 70rem; }
 .corp-band h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
 .corp-band p { margin: 0 0 0.75rem; color: var(--c-text-2); line-height: 1.6; }
+
+/* 12 Nov: the engine introduction under the hero headline */
+.hero-engine-title { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0.5rem 0 0; }
+.hero-engine-text { margin: 0; }

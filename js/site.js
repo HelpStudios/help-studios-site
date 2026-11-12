@@ -63,7 +63,7 @@ var SITE = {
     });
 
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 1080) setNav(false);
+      if (window.innerWidth > 1360) setNav(false);
     });
   }
 
