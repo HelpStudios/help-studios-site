@@ -2652,3 +2652,7 @@ body {
 /* 12 Nov: the engine introduction under the hero headline */
 .hero-engine-title { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0.5rem 0 0; }
 .hero-engine-text { margin: 0; }
+
+/* 14 Nov: standalone links are at least 24px tall (WCAG 2.2 target size); text-inline links are exempt */
+.link-arrow, a.trust-check, .site-footer a, a[href="#contact"] { min-height: 24px; }
+.link-arrow { display: inline-flex; align-items: center; }
